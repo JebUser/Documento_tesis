@@ -1,0 +1,108 @@
+\section{Definir}
+\subsection{Requerimientos}
+A partir del análisis de usuarios, contexto y objetivos pedagógicos, se consolidó un conjunto de requisitos funcionales y no funcionales que garantizan accesibilidad, rendimiento y trazabilidad de la experiencia, sirviendo como base para diseño, implementación y validación con profesionales del INCS.% [Fuente: l.
+
+\subsection{Requisitos Funcionales (RF)}
+% Nota: Se preserva el contenido del listado y se ajusta la numeración para evitar duplicados de etiquetas.
+\begin{itemize}
+  \item RF-01: El sistema mostrará un menú de inicio en VR con opciones de Continuar (si existe partida guardada), Nuevo Juego, Cargar Juego y Opciones.
+  \item RF-02: El sistema debe permitirle al jugador elegir entre dos niveles de dificultad: novato y experto.
+  \item RF-03: El sistema debe mostrar la historia mediante audio y subtítulos legibles, grandes y sencillos.
+  \item RF-04: El sistema debe mostrar preguntas contextuales sencillas en cuadros de texto grandes con imágenes simples antes de los minijuegos.
+  \item RF-05: El sistema debe mostrar una guía audiovisual de cómo se debe desarrollar cada minijuego.
+  \item RF-06: El sistema debe almacenar el número de intentos y el tiempo que tomó responder cada una de las preguntas planteadas.
+  \item RF-07: El sistema debe almacenar el número de intentos y el tiempo que tomó completar cada minijuego.
+\end{itemize}
+
+\subsection{Requisitos No Funcionales (RNF)}
+\begin{itemize}
+  \item RNF-01: Las texturas y colores deben ofrecer contrastes aptos para usuarios con dificultades visuales.
+  \item RNF-02: El sistema debe ejecutarse a \(\geq 60\) FPS en el dispositivo objetivo.
+  \item RNF-03: La latencia de entrada debe ser \(\leq 20\) ms.
+  \item RNF-04: Deben usarse indicadores y guías claras y visibles en objetivos y zonas.
+  \item RNF-05: Debe haber colisiones invisibles que impidan avanzar a zonas no permitidas.
+  \item RNF-06: Los datos deben anonimizarse y almacenarse conforme a GDPR/Ley 1581 (Colombia).
+  \item RNF-07: Todo dato almacenado requerirá consentimiento de acudientes.
+  \item RNF-08: Compatibilidad con gafas Meta Quest 3.
+  \item RNF-09: Arquitectura modular para facilitar mantenimiento y evolución.
+  \item RNF-10: Cobertura de sentencia en pruebas unitarias \(\geq 70\%\).
+  \item RNF-11: Tasa de fallos críticos \(\leq 1\%\) por hora de juego.
+\end{itemize}
+
+\subsection{Selección del entorno de desarrollo}
+
+La elección del entorno de desarrollo es crucial para garantizar la viabilidad técnica y la accesibilidad del prototipo. 
+Se evaluaron diversas opciones considerando su madurez, facilidad de uso, mantenimiento, portabilidad y capacidad para 
+integrar las características necesarias para el proyecto.
+
+\subsubsection{Criterios de selección}
+
+Se priorizaron los siguientes criterios en la selección de tecnologías:
+
+\begin{itemize}
+\item \textbf{Fiabilidad:} se priorizó una pila madura, con soporte activo, documentación amplia y casos de uso consolidados en XR educativa y prototipado rápido, reduciendo riesgos técnicos en un entorno con sesiones cortas y supervisadas en el INCS.
+
+\item \textbf{Facilidad de manipulación:} se favorecieron herramientas con flujos de trabajo visuales, depuración sencilla en dispositivo y perfiles de entrada accesibles (voz, subtítulos, vibración, alto contraste) para iterar con terapeutas y población infantil.
+
+\item \textbf{Mantenimiento:} se buscó modularidad por escenas/paquetes, configuración por ScriptableObjects, y separación de lógica, datos y presentación para facilitar cambios en narrativa, actividades y accesibilidad sin refactorizaciones costosas.
+
+\item \textbf{Portabilidad:} se eligieron APIs estándar XR y paquetes oficiales para minimizar acoplamientos específicos, apuntando a portabilidad intra-ecosistema Meta (Quest 2/3/Pro) y reduciendo retrabajo en perfiles de rendimiento.
+\end{itemize}
+
+\subsubsection{Motor de desarrollo: Unity}
+
+Unity ofrece un ecosistema consolidado para XR con pipeline de render flexible, perfiles de calidad por dispositivo y perfiles de entrada configurables, lo que acelera prototipado y pruebas con usuarios en contextos educativos.
+
+Se recomienda emplear los siguientes paquetes y librerías:
+
+\begin{itemize}
+\item \textbf{XR Plugin Management y OpenXR de Unity:} proporcionan estandarización en interacción y evitan SDKs propietarios que limiten la portabilidad.
+
+\item \textbf{XR Interaction Toolkit:} facilita interacciones de mano/controlador, locomoción por teletransporte y otras mecánicas de entrada accesibles.
+
+\item \textbf{XR Hands:} cuando corresponda, para seguimiento de manos naturales.
+
+\item \textbf{TextMesh Pro:} para tipografía de alto contraste y gran tamaño.
+
+\item \textbf{Paquetes de Accessibility/Localization:} para subtítulos y guía en voz.
+
+\item \textbf{Input System:} para mapear esquemas accesibles y alternativos, manteniendo la base en APIs soportadas por el runtime XR.
+\end{itemize}
+
+La división por escenas (portada, tutorial, minijuegos, cierre), prefabs reutilizables y configuración de actividades por datos permite que terapeutas sugieran ajustes sobre parámetros sin modificar código central, facilitando iteraciones de diseño inclusivo.
+
+\subsubsection{Hardware base: Meta Quest 3}
+
+\paragraph{Accesibilidad al desarrollo:}
+La línea Quest permite despliegue autónomo (standalone) con instalación directa del paquete y herramientas de depuración sobre Wi-Fi/USB, lo que simplifica ciclos de prueba in situ en el INCS sin infraestructura adicional de PC VR.
+
+\paragraph{Capacidades de hardware:}
+Al combinar capacidad de cómputo móvil, seguimiento integrado y controladores hápticos, Quest 3 soporta experiencias inmersivas con audio espacial y retroalimentación vibratoria, adecuadas para actividades guiadas y narrativa con accesibilidad perceptual.
+
+\paragraph{Comodidad y sesiones:}
+El formato standalone reduce cableado y distracciones, facilitando sesiones cortas con pausas programadas, integrando técnicas de locomoción segura (teletransporte) y viñeteado para mitigación de mareo.
+
+\subsubsection{Facilidad de manipulación}
+
+\paragraph{Software:}
+El ciclo editar-probar-medir es ágil con perfiles de calidad, capturas de rendimiento y logs de eventos (intentos, tiempos, aciertos/errores), lo que facilita observar impacto de cambios en accesibilidad y narrativa por iteración.
+
+\paragraph{Hardware:}
+La instalación directa en Quest 2/3 habilita pruebas de campo y observación no intrusiva, incluso sin proyección espejo, siguiendo el avance por señales auditivas cuando sea necesario, en línea con el protocolo aplicado en las visitas al INCS.
+
+\subsubsection{Mantenibilidad}
+
+\paragraph{Arquitectura modular:}
+La separación de lógica de juego, controladores de accesibilidad (contraste, subtítulos, audio descriptivo), y datos de actividades permite integrar nuevas escenas/retos sin afectar el núcleo, conservando la trazabilidad con requisitos y criterios de aceptación.
+
+\paragraph{Instrumentación ligera:}
+Los registros de eventos y métricas de rendimiento se mantienen desacoplados de la lógica de escena, facilitando análisis posterior y resguardo de privacidad/consentimiento según lineamientos éticos reportados.
+
+\subsubsection{Portabilidad dentro de Meta Quest}
+
+Aunque el desarrollo se centra en Meta Quest 3, el objetivo es que la aplicación sea portable al menos al resto de la serie Meta Quest (p. ej., Quest 2), ajustando perfiles de calidad, texturas y presupuesto de geometría para mantener accesibilidad y rendimiento.
+
+Al basarse en OpenXR, XR Interaction Toolkit y paquetes oficiales, la dependencia de SDKs específicos se reduce, y el esfuerzo de portabilidad se enfoca en tuning de rendimiento, escalado de UI accesible y validación de interacciones en cada dispositivo objetivo.
+
+Este conjunto de decisiones equilibra fiabilidad y velocidad de iteración con requisitos de accesibilidad, mantenimiento y validación en campo, conservando la posibilidad de ampliar la cobertura a más dispositivos dentro del ecosistema Meta sin comprometer la experiencia educativa ni la calidad técnica del prototipo.
+

@@ -1,0 +1,136 @@
+% CAPÍTULO 3: METODOLOGÍA
+\chapter{Metodología, Análisis y Diseño}
+
+\section{Metodología Kanban}
+
+La metodología Kanban es un enfoque ágil de gestión de proyectos originado en la manufactura esbelta (lean manufacturing) que se ha 
+extendido con éxito al desarrollo de software y otros ámbitos del trabajo del conocimiento \cite{kirovska2015}. Su nombre 
+proviene del japonés y significa ``tarjeta visual'', haciendo referencia a la representación visual del trabajo y el flujo de procesos.
+
+Según Kirovska y Koceski \cite{kirovska2015}, Kanban es principalmente un concepto de manufactura esbelta cuya aplicación en 
+otras áreas está creciendo continuamente debido a su probada efectividad. En el contexto del desarrollo de software, identificaron mediante una revisión sistemática de la literatura que los principales beneficios 
+reportados del método Kanban incluyen la mejora del tiempo de entrega del software, la mejora de la calidad del software, 
+la comunicación y coordinación mejoradas, la consistencia en la entrega y la disminución de defectos reportados por los clientes.
+
+\subsection{Principios de Kanban}
+
+Kanban se fundamenta en cuatro principios básicos que guían su implementación y uso \cite{djaa2021}:
+
+\begin{enumerate}
+    \item \textbf{Comenzar con lo que se hace ahora:} Kanban reconoce el valor de los procesos y prácticas existentes. En lugar de introducir cambios radicales, se construye sobre el proceso actual identificando áreas de mejora específicas.
+    
+    \item \textbf{Acordar perseguir cambios incrementales y evolutivos:} Este principio está alineado con metodologías ágiles y reconoce que los grandes cambios son difíciles de implementar y tienden a generar resistencia. Kanban promueve la mejora continua mediante pequeños cambios manejables.
+    
+    \item \textbf{Respetar el proceso actual, roles, responsabilidades y títulos:} Kanban busca minimizar la resistencia al cambio respetando la estructura organizacional existente y construyendo sobre ella.
+    
+    \item \textbf{Fomentar el liderazgo en todos los niveles:} El método promueve que las mejoras y observaciones provengan de todos los miembros del equipo, no solo de la gerencia, fomentando una cultura de mejora continua (Kaizen).
+\end{enumerate}
+
+\subsection{Prácticas Centrales de Kanban}
+
+Además de los principios fundamentales, Kanban se implementa mediante seis prácticas centrales \cite{djaa2021}:
+
+\begin{enumerate}
+    \item \textbf{Visualizar el trabajo:} La visualización del flujo de trabajo mediante tableros Kanban permite a todos los miembros del equipo comprender rápidamente qué está en progreso, qué está completado y qué está pendiente. Esta transparencia facilita la identificación de cuellos de botella y áreas congestionadas.
+    
+    \item \textbf{Limitar el trabajo en progreso (WIP):} Establecer límites en la cantidad de elementos de trabajo que pueden estar activos simultáneamente en cada etapa del proceso ayuda a equilibrar la carga de trabajo y asegurar un flujo constante. Un sistema efectivo se centra más en el flujo de trabajo que en mantener ocupados a los miembros del equipo.
+    
+    \item \textbf{Gestionar el flujo:} Es fundamental gestionar el flujo de trabajo para completar el proyecto de la forma más fluida y predecible posible, manteniendo un ritmo sostenible y monitoreando métricas como el tiempo de ciclo y el tiempo de entrega.
+    
+    \item \textbf{Hacer las políticas explícitas:} Las políticas de trabajo deben ser acordadas por todas las partes interesadas y deben ser pocas, sencillas, bien definidas, visibles, aplicables en todo momento y fácilmente modificables.
+    
+    \item \textbf{Implementar ciclos de retroalimentación:} Un conjunto adecuado de ciclos de retroalimentación mejora las capacidades de aprendizaje del equipo y su evolución mediante experimentos gestionados. Esto incluye reuniones regulares de revisión y retrospectiva.
+    
+    \item \textbf{Mejorar colaborativamente, evolucionar experimentalmente:} Se diseñan experimentos en entornos seguros donde fallar no tiene consecuencias graves. Si el experimento da buenos resultados, se mantienen los cambios; si no, se puede revertir fácilmente al estado anterior.
+\end{enumerate}
+
+\subsection{Aplicación de Kanban en Este Proyecto}
+
+Para el desarrollo del prototipo de realidad virtual, la metodología Kanban resulta especialmente adecuada por las siguientes razones:
+
+\begin{itemize}
+    \item \textbf{Adaptabilidad continua:} Dado que el proyecto requiere iteraciones constantes basadas en la retroalimentación de profesionales del INCS y pruebas con niños con diversidad sensorial, Kanban permite ajustar prioridades y realizar cambios incrementales sin disrupciones mayores.
+    
+    \item \textbf{Visualización del progreso:} El tablero Kanban permitirá llevar un seguimiento ordenado de las tareas pendientes, en desarrollo y terminadas, facilitando la comunicación entre los desarrolladores, el director del proyecto y los profesionales del instituto.
+    
+    \item \textbf{Gestión de prioridades:} La capacidad de reorganizar elementos en el tablero según su prioridad es fundamental para un proyecto donde los aspectos de accesibilidad pueden requerir ajustes críticos basados en pruebas de usabilidad.
+    
+    \item \textbf{Entrega continua:} El modelo de entrega continua de Kanban asegura que el prototipo adquiera funcionalidades progresivamente, permitiendo evaluaciones tempranas y frecuentes con el público objetivo.
+    
+    \item \textbf{Métricas y mejora continua:} Las métricas de Kanban como el tiempo de ciclo y el tiempo de entrega permitirán evaluar la efectividad del proceso de desarrollo y realizar ajustes para optimizar el flujo de trabajo.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/tablero-kanban.png}
+    \caption{Tablero Kanban típico mostrando las columnas de flujo de trabajo (To Do, In Progress, Done) y la visualización de tareas mediante tarjetas.}
+    \label{fig:kanban_board}
+\end{figure}
+
+Como se muestra en la Figura \ref{fig:kanban_board}, un tablero Kanban típico organiza el trabajo en columnas que representan diferentes etapas del proceso, permitiendo visualizar el flujo de tareas y detectar cuellos de botella de manera inmediata.
+
+
+La idea del Sistema de Realidad Virtual es que sea un producto adaptado de tal forma que sea cómodo para 
+múltiples condiciones sensoriales. Es por ello que usar una metodología Kanban es factible para el desarrollo
+ del proyecto. Como la idea es que el prototipo sea accesible, Kanban permitirá iterar y realizar ajustes 
+ constantemente dependiendo del feedback que otorgue el público objetivo. Por otro lado, usar un tablero Kanban 
+ permitirá llevar un seguimiento ordenado de las tareas que se encuentren pendientes, en desarrollo y terminadas. 
+ También, permite hacer pruebas frecuentes con niños y priorizar los ajustes que sean críticos dependiendo de la 
+ retroalimentación obtenida. Por último, Kanban busca seguir un modelo de entrega continua, por lo que se asegura 
+ que el proyecto adquiera mayores funcionalidades a medida que se avanza en el mismo \cite{13}
+
+
+\section{Análisis}
+
+Esta sección detalla el análisis realizado para definir los requisitos, objetivos pedagógicos, usuarios, contexto,
+ plataforma, accesibilidad, riesgos, procedimiento de levantamiento y métricas de éxito del prototipo de realidad virtual.
+
+\subsection{Tipo de Estudio}
+
+El estudio será de carácter experimental, puesto que la idea del desarrollo del prototipo es poder explorar la 
+Realidad Virtual en el ámbito del aprendizaje para una población que cuenta con condiciones sensoriales especiales. 
+Requerirá de una investigación y acompañamiento continuo de profesionales para poder llegar a un producto que muestre 
+una buena adaptación del entorno virtual a los objetivos planteados.
+
+
+\subsection{Objetivos pedagógicos}
+El prototipo busca contar de forma interactiva la historia del oso de anteojos para que el niño aprenda
+ y refuerce valores como la justicia, el respeto y la empatía, integrando la narrativa con actividades
+  que promuevan comprensión del relato y toma de decisiones dentro del entorno inmersivo. % [Fuente: analisis-p1]
+
+
+\subsection{Usuarios y contexto}
+La audiencia objetivo son niñas y niños del INCS entre 5 y 12 años con diversas condiciones sensoriales
+ (visuales y/o auditivas), con poca o nula experiencia previa en realidad virtual, en entornos supervisados
+  por profesionales del instituto para garantizar acompañamiento y seguridad durante la interacción. % [Fuente: analisis-p1]
+% [file:53]
+
+\subsection{Plataforma y despliegue}
+La primera versión se desarrollará para Meta Quest 3 en modo autónomo, con el objetivo estratégico de portar
+ la experiencia a otros visores de la familia Meta Quest, manteniendo equivalencia funcional y de 
+ accesibilidad entre dispositivos para asegurar continuidad pedagógica.
+
+\subsection{Accesibilidad y apoyos}
+Se incorporan medidas de accesibilidad obligatorias: opciones de alto contraste, subtítulos permanentes, 
+audio descriptivo, guía por voz, guía corriente y contenido audiovisual de apoyo antes y durante las 
+actividades, a fin de reducir barreras de entrada y sostener la progresión dentro de la historia. % [Fuente: analisis-p1]
+% [file:53]
+
+\subsection{Riesgos y mitigaciones}
+Se reconocen riesgos de fatiga ocular y \textit{motion sickness}; para mitigarlos se aplicarán 
+técnicas de túnel (vignette) en locomoción, desplazamiento por teletransportación en lugar de 
+joystick continuo y sesiones breves con pausas programadas, manteniendo supervisión profesional 
+y criterios de detención segura.
+% [file:53]
+
+\subsection{Procedimiento de levantamiento}
+El análisis incluyó visitas al instituto para observar espacios y dinámica de interacción de los niños, 
+entrevistas con profesionales para derivar requisitos, resolver dudas y co-idear adaptaciones, y 
+revisión de literatura relacionada con el proyecto Colombia–Quebec para alinear metas, ética y alcance.% [Fuente: analisis-p1]
+% [file:53]
+
+\subsection{Métricas de éxito}
+Los indicadores principales de logro serán: completar el/los minijuegos previstos, 
+número de errores por actividad, comprensión del relato medida con preguntas sencillas 
+y el tiempo total requerido para completar la experiencia, como base para iteración y mejora,% [Fuente: analisis-p1]
+% [file:53]

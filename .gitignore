@@ -1,0 +1,50 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.dvi
+*.dpth
+*.md5
+*.mdf
+*.mps
+*.out
+*.auxlock
+
+# Intermediate files
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+
+# PDFs (optional - uncomment if you don't want to track PDFs)
+# *.pdf
+
+# Bibliography
+*.bib.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LaTeX temporary files
+*~
+*.bak
+*.backup
+*.tmp

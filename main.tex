@@ -1,0 +1,89 @@
+\documentclass[a4paper,12pt]{report}
+% Paquetes básicos y de formato
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{left=3cm, right=2cm, top=3cm, bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{url}
+
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\chaptermark}[1]{\markboth{Pontificia Universidad Javeriana Cali}{#1}}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\rightmark}
+\fancyfoot[C]{\thepage}
+
+% Configuración del bibliography
+\bibliographystyle{IEEEtran}
+\usepackage[numbers]{natbib}
+\setcitestyle{square}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    Pontificia Universidad Javeriana Cali\\
+    Facultad de Ingeniería y Ciencias.\\
+    Ingeniería de Sistemas y Computación.\\
+    Trabajo de grado.\\[2cm]
+    {\LARGE \textbf{Prototipo de un Sistema de Realidad Virtual Interactivo para el
+    Relato de un Cuento Sobre los Osos de Anteojos Orientado a Niños
+    con Diversidad Sensorial}}\\[1.5cm]
+    Juan Esteban Becerra Gutiérrez\\
+    Alejandro Sarmiento Rivera\\
+    \textbf{Director:} Andrés Navarro Newball\\[1cm]
+    Santiago de Cali\\
+    num de Noviembre de 2026\\[3cm]
+    \includegraphics[width=0.6\textwidth]{img/pujlogo.png}\\
+\end{titlepage}
+
+\newpage
+%Pagina de cartas
+\input{texts/aprobacion.tex}
+\input{texts/aprobacion_est.tex}
+\cleardoublepage%
+\input{texts/abstract_esp.tex}
+\cleardoublepage%
+\input{texts/abstract_eng.tex}
+\cleardoublepage%
+
+\tableofcontents
+\cleardoublepage%
+
+% Capítulos principales
+
+\input{texts/cap_0.tex}
+
+\input{texts/cap_1.tex}
+
+\input{texts/cap_2.tex}
+
+\input{texts/cap_3.tex}
+
+\input{texts/cap_3_1.tex}
+
+\ldots
+
+\chapter{Implementación}
+\ldots
+
+\chapter{Validación y Resultados}
+\input{texts/cap_6.tex}
+
+\chapter{Conclusiones}
+\ldots
+
+\chapter{Trabajo Futuro}
+\ldots
+
+\chapter*{Bibliografía}
+\bibliography{biblio}
+
+\end{document}

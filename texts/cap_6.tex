@@ -1,0 +1,102 @@
+\section{Plan de Pruebas}
+El plan de pruebas define el alcance, los escenarios, los participantes, los procedimientos y los instrumentos de evaluación para verificar el cumplimiento de los requisitos del prototipo de realidad virtual y valorar su utilidad pedagógica en niñas y niños con diversidad sensorial en el INCS.
+
+\subsection{Alcance y objetivos}
+El alcance cubre la validación de requisitos funcionales y no funcionales, la evaluación de usabilidad y confort, la verificación de completitud del juego, y la comprensión de elementos textuales y auditivos, con observación y validación por profesionales del INCS.
+
+\subsection{Aprobación ética}
+Al involucrar sujetos humanos, la aprobación de todos los procedimientos y protocolos éticos y experimentales fue otorgada por el Comité de Ética de la Investigación del Instituto para Niños Ciegos y Sordos del Valle del Cauca (Comité de Ética de la Investigación INCS) bajo la Solicitud No. INV-2020-007, del 30 de junio de 2020, y realizada de acuerdo con las resoluciones 8430 (1994) y 2378 (2008) del Ministerio de Salud y Protección Social de Colombia. En el futuro, estas pruebas y ajustes permitirán perfeccionar el sistema, ampliando su aplicabilidad a escenarios más diversos.
+
+\subsection{Participantes y entorno}
+Participarán profesionales del INCS y un grupo piloto de niñas y niños entre 5 y 12 años con condiciones visuales y/o auditivas, con acompañamiento permanente del personal del instituto en espacios controlados del INCS. Las sesiones se planifican con tiempos acotados, pausas programadas y configuración accesible (alto contraste, subtítulos permanentes) para mitigar fatiga ocular y síntomas de ciber-cinetosis.
+
+\subsection{Procedimiento}
+Se visitó el INCS para la ejecución de las pruebas en campo, utilizando gafas Meta Quest 2 como dispositivo de ejecución del prototipo en su modalidad autónoma. Se realizó la instalación de la aplicación en las gafas y, posteriormente, se condujeron pruebas observacionales en las que únicamente el niño veía el juego, mientras el equipo evaluaba el avance por medio de los audios y señales emitidas por el visor, sin proyección externa ni ayuda visual para los observadores. Este enfoque permitió analizar si el niño completaba el juego guiándose por las instrucciones auditivas y la narrativa, y observar patrones de interacción y comprensión sin influencia del observador.
+
+\section{Validación de Requisitos}
+Se valida el cumplimiento de los requisitos funcionales (RF) y no funcionales (RNF) mediante criterios de éxito observables, evidencia directa en sesión (observación, telemetría simple) y juicio experto de profesionales del INCS.
+
+\subsection{Requisitos Funcionales}
+\begin{table}[h]
+\centering
+\caption{Validación de Requisitos Funcionales}
+\begin{tabular}{|l|p{4cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{RF} & \textbf{Nombre} & \textbf{Criterio de Éxito} & \textbf{Validación (Evidencia)} \\
+\hline
+RF1 & Interfaz y accesos & Comprensión y tiempo de aprendizaje \(\leq\) 2 min & Observación de interacción inicial y preguntas de verificación \\
+\hline
+RF2 & Narrativa accesible & Audio y subtítulos legibles, sincronizados & Lista de chequeo de contraste/tamaño y revisión experta \\
+\hline
+RF3 & Guía previa a minijuegos & Guía audiovisual reproducida antes de iniciar & Confirmación del niño y observación de ejecución acorde \\
+\hline
+RF4 & Retroalimentación inmediata & Feedback \(\leq\) 200 ms tras acción válida & Juicio experto y telemetría simple de eventos \\
+\hline
+RF5 & Registro de desempeño & Tiempos e intentos por actividad almacenados & Verificación de logs y consistencia de eventos \\
+\hline
+\end{tabular}
+\end{table} 
+
+\subsection{Requisitos No Funcionales}
+\begin{table}[h]
+\centering
+\caption{Validación de Requisitos No Funcionales}
+\begin{tabular}{|l|p{4cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{RNF} & \textbf{Nombre} & \textbf{Criterio de Éxito} & \textbf{Validación (Métrica/Evidencia)} \\
+\hline
+RNF1 & Compatibilidad & Ejecución estable en Meta Quest 2/3 & Sesiones completas sin cierres ni errores \\
+\hline
+RNF2 & Rendimiento & \(\geq 60\) FPS sostenidos & Telemetría de frame time \\
+\hline
+RNF3 & Accesibilidad perceptual & Alto contraste, tipografía legible y subtítulos activos & Lista de chequeo y validación experta \\
+\hline
+RNF4 & Confort y seguridad & Sin síntomas moderados; pausas y teletransporte activos & Observación y reporte post-sesión \\
+\hline
+RNF5 & Privacidad y consentimiento & Datos anónimos con consentimiento de acudiente & Verificación de consentimientos y política de datos \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Evaluación de las Pruebas}
+Las encuestas se diseñaron para recoger, por un lado, el juicio experto de terapeutas sobre utilidad educativa, adecuación terapéutica y oportunidades de mejora del prototipo, y por otro, impresiones clave de niñas y niños sobre disfrute, facilidad e intención de reuso; en conjunto, estas preguntas permiten triangulación con la observación y la telemetría para valorar usabilidad, comprensión y potencial de adopción en el contexto del INCS. % [attached_file:22]
+
+\subsection{Encuesta a Terapeutas}
+\begin{table}[h]
+\centering
+\caption{Cuestionario aplicado a terapeutas}
+\begin{tabular}{|c|p{13cm}|}
+\hline
+\textbf{\#} & \textbf{Pregunta} \\
+\hline
+1 & ¿Cuál es la utilidad de esta aplicación para el instituto? ¿Cómo la utilizaría? \\
+\hline
+2 & ¿Qué facilidades o dificultades encontró al utilizar la app? \\
+\hline
+3 & ¿Qué tan útil encuentra la aplicación? \\
+\hline
+4 & ¿Qué le cambiaría a la aplicación? \\
+\hline
+5 & Califique de 1 a 6 la aplicación. \\
+\hline
+\end{tabular}
+\end{table}
+Estas preguntas buscan documentar valor pedagógico percibido, condiciones de uso en escenarios reales, barreras y facilitadores, además de priorizar mejoras según la experiencia clínica y educativa del equipo profesional del INCS. % [attached_file:22]
+
+\subsection{Encuesta a Niñas y Niños}
+\begin{table}[h]
+\centering
+\caption{Cuestionario aplicado a niñas y niños}
+\begin{tabular}{|c|p{13cm}|}
+\hline
+\textbf{\#} & \textbf{Pregunta} \\
+\hline
+1 & ¿Te gustó? (sí/no) \\
+\hline
+2 & ¿Te pareció fácil? (sí/no) \\
+\hline
+3 & ¿Te gustaría volver a jugar? (sí/no) \\
+\hline
+\end{tabular}
+\end{table}
+Estas preguntas breves priorizan comprensión y respuesta rápida acorde con la edad objetivo y condiciones sensoriales, capturando disfrute, facilidad e intención de reuso como indicadores prácticos de aceptación y usabilidad inicial del prototipo en contexto. % [attached_file:22]
