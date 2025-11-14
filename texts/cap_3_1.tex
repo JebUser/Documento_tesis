@@ -60,8 +60,6 @@ Se recomienda emplear los siguientes paquetes y librerías:
 
 \item \textbf{XR Interaction Toolkit:} facilita interacciones de mano/controlador, locomoción por teletransporte y otras mecánicas de entrada accesibles.
 
-\item \textbf{XR Hands:} cuando corresponda, para seguimiento de manos naturales.
-
 \item \textbf{TextMesh Pro:} para tipografía de alto contraste y gran tamaño.
 
 \item \textbf{Paquetes de Accessibility/Localization:} para subtítulos y guía en voz.
@@ -74,7 +72,7 @@ La división por escenas (portada, tutorial, minijuegos, cierre), prefabs reutil
 \subsubsection{Hardware base: Meta Quest 3}
 
 \paragraph{Accesibilidad al desarrollo:}
-La línea Quest permite despliegue autónomo (standalone) con instalación directa del paquete y herramientas de depuración sobre Wi-Fi/USB, lo que simplifica ciclos de prueba in situ en el INCS sin infraestructura adicional de PC VR.
+La línea Quest permite despliegue autónomo (standalone) con instalación directa del paquete y herramientas de depuración sobre Wi-Fi/USB, lo que simplifica ciclos de prueba en el INCS sin infraestructura adicional de PC VR.
 
 \paragraph{Capacidades de hardware:}
 Al combinar capacidad de cómputo móvil, seguimiento integrado y controladores hápticos, Quest 3 soporta experiencias inmersivas con audio espacial y retroalimentación vibratoria, adecuadas para actividades guiadas y narrativa con accesibilidad perceptual.
@@ -106,3 +104,20 @@ Al basarse en OpenXR, XR Interaction Toolkit y paquetes oficiales, la dependenci
 
 Este conjunto de decisiones equilibra fiabilidad y velocidad de iteración con requisitos de accesibilidad, mantenimiento y validación en campo, conservando la posibilidad de ampliar la cobertura a más dispositivos dentro del ecosistema Meta sin comprometer la experiencia educativa ni la calidad técnica del prototipo.
 
+\section{Diseño}
+
+El siguiente apartado detalla las decisiones de diseño tomadas para cumplir con los requisitos funcionales y no funcionales establecidos en la fase anterior, enfocándose en aspectos clave como la narrativa, mecánicas de juego, accesibilidad y mitigación de riesgos.
+
+\subsection{Mecánicas de los juegos}
+Teniendo en cuenta el enfoque para las actividades propuesto en \ref{sec:actividades-juego}, se optó por diseñar una serie de minijuegos que fueran fieles a la linealidad de la narrativa y representaran un reto para los niños, de tal forma que se mantuviera su interés y motivación a lo largo de la experiencia
+y a su vez se reforzaran los objetivos pedagógicos planteados. Cada minijuego se diseñó para ser intuitivo y accesible, con controles simples y una guía tanto visual como auditiva para facilitar la comprensión y participación de los niños. Los minijuegos realizados fueron los siguientes:
+\begin{enumerate}
+  \item \textbf{Comida Favorita del Oso:} Consiste en una pregunta de selección múltiple en la que se le presenta al niño tres opciones de comidas favoritas distintas, pero solo una es la correcta. El oso menciona su comida favorita desde el inicio de la historia, por lo que el niño debe recordar esta información para responder correctamente.
+  \item \textbf{Conseguir las Bromelias:} Ahora el niño deberá de escalar un árbol que contiene bromelias para poder alimentar al oso de anteojos. El niño debe usar las manos para agarrar las bromelias y poder comérselas.
+  \item \textbf{Líquido para Beber:} Consiste en una pregunta de selección múltiple en la que se le presenta al niño tres opciones de líquidos para saciar la sed del oso. El niño deberá reconocer intuitivamente el líquido perfecto para poder ayudar al oso (en este caso, el agua).
+  \item \textbf{Beber el Agua:} El niño deberá de ayudar al oso a beber agua de un lago. Para esto, el niño debe usar sus manos para llenar un vaco con agua y luego llevarlo a la boca del oso para que pueda beber.
+  \item \textbf{Reconocer los Sentimientos del Oso:} Consiste en una pregunta de selección múltiple en la que se le presenta al niño tres opciones de sentimientos distintos. El niño deberá reconocer el sentimiento del oso basándose en las pistas contextuales proporcionadas durante la narrativa.
+  \item \textbf{Atrapar al pez:} El niño deberá ayudar al oso a atrapar un pez en un lago, el cual se llevó las gafas del oso. Para esto, el niño debe usar sus manos para tratar de atrapar al pez mientras este trata de huir de él. Con esto se busca trabajar la motricidad fina, la coordinación ojo-mano y enfatizar los valores de justicia y respeto.
+\end{enumerate}
+
+Los detalles sobre la implementación de cada uno de estos minijuegos se encuentran en la sección \ref{} correspondiente a la implementación del prototipo.
