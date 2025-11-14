@@ -48,3 +48,6 @@ Thumbs.db
 *.bak
 *.backup
 *.tmp
+
+# build of the document.
+/build/
