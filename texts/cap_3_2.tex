@@ -5,12 +5,88 @@ El objetivo era encontrar un diseño de entorno adecuado para el desarrollo de l
 en el dispositivo objetivo.
 
 \subsection{Diseño del Entorno}
-% TODO: Agregar descripción del proceso de desarrollo del entorno
+El diseño del entorno se fundamentó en la riqueza biológica y paisajística de los bosques andinos colombianos, ecosistemas biodiversos y culturalmente significativos que sirven de hábitat natural para el oso de anteojos. A través de investigación visual y referencias de ecosistemas como el Bosque Andino de Iguaque, se capturó la esencia del contexto donde habita el protagonista, integrando vegetación típica, cuerpos de agua y topografía característica para fortalecer la inmersión narrativa y el aprendizaje contextual sobre conservación ambiental.
 
-\subsection{Diseño de Personajes}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/Bosque_Andino_Iguaque.png}
+    \caption{Referencia visual del Bosque Andino de Iguaque, inspiración para el diseño del entorno del prototipo.}
+    \label{fig:bosque_referencia}
+\end{figure}
 
-\subsubsection{Oso de Anteojos:}
-% TODO: Agregar descripción del proceso de desarrollo del Oso de Anteojos.
+\subsection{Iteración de diseño: XR Academia y validación temprana}
+Durante la etapa de diseño se presentó una versión alpha del prototipo en la XR Academia, lo que permitió recopilar retroalimentación crítica de expertos y usuarios potenciales. En esta iteración se observó que la versión inicial del terreno (Ver figura: \ref{fig:terreno_v1}), aunque visualmente atractiva con alto nivel de detalle, no cumplía con los requisitos de fluidez y rendimiento necesarios para la ejecución nativa en gafas Quest 3. Adicionalmente, se identificó que los pequeños detalles visuales podían distraer la atención de niñas y niños durante la experiencia inmersiva, interfiriendo con los objetivos pedagógicos y la concentración en la narrativa.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/Terreno_unity_v1.png}
+    \caption{Versión inicial del terreno (v1) con alto nivel de detalle visual y polígonos, utilizada en XR Academia para validación temprana.}
+    \label{fig:terreno_v1}
+\end{figure}
+
+\subsection{Optimización de terreno para requisitos de rendimiento}
+A partir de la retroalimentación, se optó por un diseño de terreno más simple que mantuviera la estética visual del ecosistema andino mientras cumplía con los requisitos de rendimiento y fluidez. La simplificación incluyó reducción de polígonos, eliminación de detalles secundarios y una paleta de colores clara con contraste visual adecuado para usuarios con diversidad sensorial, manteniendo coherencia con los requisitos no funcionales de accesibilidad (RNF-3) y rendimiento (RNF-2).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/terrain_scene.png}
+    \caption{Versión optimizada del terreno, reducida en polígonos y detalles, manteniendo la estética del Bosque Andino y asegurando rendimiento en dispositivo.}
+    \label{fig:terreno_optimizado}
+\end{figure}
+
+\subsection{Diseño de zonas de acción y minijuegos}
+Las zonas de acción fueron diseñadas de manera específica para cada minijuego definido en la sección de Actividades \ref{sec:mecanicas-juegos}, siguiendo principios de claridad visual, accesibilidad y optimización de recursos.
+
+\subsubsection{Zona de escalada: árbol interactivo}
+Para el minijuego de escalada se diseñó un árbol sencillo y de bajo conteo poligonal, priorizando interactividad y facilidad de modelado. El árbol se optimizó para permitir puntos de agarre claros y visibles, con un modelo simplificado que facilita la experiencia de escalada sin sobrecargar el dispositivo. (Ver Figura \ref{fig:climb_zone}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/climb_zone.png}
+    \caption{Zona de escalada con árbol interactivo de bajo conteo poligonal, diseñado para la primera actividad del prototipo.}
+    \label{fig:climb_zone}
+\end{figure}
+
+\subsubsection{Elemento botánico: bromelia modelada con tecnología generativa}
+Para la inclusión de flora nativa del ecosistema andino, se utilizó la herramienta Meshy para generar un modelo 3D de bromelia (Bromelia sp.), planta característica del Bosque Andino. Posterior a la generación, se realizaron ajustes iterativos de geometría (reducción de polígonos), texturización y materiales para optimizar la experiencia visual sin comprometer rendimiento. La bromelia se integró como elemento narrativo y visual clave en el entorno. Ver Figuras \ref{fig:bromelia_blender} y \ref{fig:bromelia_final}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/Bromelia_blender.png}
+    \caption{Modelo de bromelia generado con Meshy y ajustado en Blender para optimización de polígonos y texturización.}
+    \label{fig:bromelia_blender}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/Bromelia.png}
+    \caption{Bromelia final integrada en el entorno Unity con texturas y materiales optimizados.}
+    \label{fig:bromelia_final}
+\end{figure}
+
+\subsubsection{Zona acuática: lago y minijuegos de agua}
+Para los minijuegos 2 y 3 se diseñó una zona acuática compuesta por un lago con agua simplificada (shader de agua básico para mantener rendimiento) y elementos de interacción. Se agregó una mesa y un vaso como elementos interactivos para el minijuego de tomar agua, diseñados con claridad visual y accesibilidad para usuarios con diversidad sensorial. La zona acuática se optimizó para garantizar fluidez y facilidad de navegación (Ver Figura \ref{fig:drink_zone}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/drink_zone.png}
+    \caption{Zona acuática con lago y mesa para el minijuego de tomar agua, mostrando simplicidad de formas y claridad visual.}
+    \label{fig:drink_zone}
+\end{figure}
+
+\subsubsection{Personaje: modelo del oso de anteojos}
+El modelo tridimensional del oso de anteojos fue proporcionado por el director del proyecto, Dr. Andrés Navarro Newball, cuyos ajustes técnicos incluyeron optimización de geometría (reducción de polígonos) y desarrollo completo de texturización y materiales. El resultado es un personaje con presencia visual clara, apropiado para población infantil y coherente con los objetivos narrativos de empatía y conexión emocional. Por ello, se priorizó un diseño amigable y expresivo que facilite la identificación del usuario con el protagonista (Ver Figura \ref{fig:bear_character}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/bear.png}
+    \caption{Modelo del oso de anteojos utilizado como personaje principal, con texturización y materiales finales optimizados.}
+    \label{fig:bear_character}
+\end{figure}
+
+\subsection{Estrategia de una única escena}
+El prototipo fue desarrollado en una única escena Unity que integra todas las zonas de acción, el personaje principal y los elementos de narrativa. Esta decisión de diseño se justifica por: (i) facilitar el desempeño y carga en dispositivo standalone; (ii) permitir navegación y transiciones fluidas sin interrupciones de carga; (iii) simplificar la gestión de estado global y eventos narrativos; y (iv) minimizar el tamaño del ejecutable para instalación directa en Meta Quest. La arquitectura de una escena centralizada facilita también la instrumentación de telemetría y registro de eventos de interacción para análisis posterior con profesionales del INCS.
 
 \subsubsection{Pez:}
 
