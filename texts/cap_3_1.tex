@@ -2,31 +2,24 @@
 \subsection{Requerimientos}
 A partir del análisis de usuarios, contexto y objetivos pedagógicos, se consolidó un conjunto de requisitos funcionales y no funcionales que garantizan accesibilidad, rendimiento y trazabilidad de la experiencia, sirviendo como base para diseño, implementación y validación con profesionales del INCS.% [Fuente: l.
 
-\subsection{Requisitos Funcionales (RF)}
+\subsection{Requisitos Funcionales (RF)} \label{RF}
 % Nota: Se preserva el contenido del listado y se ajusta la numeración para evitar duplicados de etiquetas.
 \begin{itemize}
-  \item RF-01: El sistema mostrará un menú de inicio en VR con opciones de Continuar (si existe partida guardada), Nuevo Juego, Cargar Juego y Opciones.
+  \item RF-01: El sistema mostrará un menú de inicio en VR con opciones de Iniciar Juego y Opciones.
   \item RF-02: El sistema debe permitirle al jugador elegir entre dos niveles de dificultad: novato y experto.
   \item RF-03: El sistema debe mostrar la historia mediante audio y subtítulos legibles, grandes y sencillos.
   \item RF-04: El sistema debe mostrar preguntas contextuales sencillas en cuadros de texto grandes con imágenes simples antes de los minijuegos.
   \item RF-05: El sistema debe mostrar una guía audiovisual de cómo se debe desarrollar cada minijuego.
-  \item RF-06: El sistema debe almacenar el número de intentos y el tiempo que tomó responder cada una de las preguntas planteadas.
-  \item RF-07: El sistema debe almacenar el número de intentos y el tiempo que tomó completar cada minijuego.
 \end{itemize}
 
 \subsection{Requisitos No Funcionales (RNF)}
 \begin{itemize}
   \item RNF-01: Las texturas y colores deben ofrecer contrastes aptos para usuarios con dificultades visuales.
-  \item RNF-02: El sistema debe ejecutarse a \(\geq 60\) FPS en el dispositivo objetivo.
-  \item RNF-03: La latencia de entrada debe ser \(\leq 20\) ms.
-  \item RNF-04: Deben usarse indicadores y guías claras y visibles en objetivos y zonas.
-  \item RNF-05: Debe haber colisiones invisibles que impidan avanzar a zonas no permitidas.
-  \item RNF-06: Los datos deben anonimizarse y almacenarse conforme a GDPR/Ley 1581 (Colombia).
-  \item RNF-07: Todo dato almacenado requerirá consentimiento de acudientes.
-  \item RNF-08: Compatibilidad con gafas Meta Quest 3.
-  \item RNF-09: Arquitectura modular para facilitar mantenimiento y evolución.
-  \item RNF-10: Cobertura de sentencia en pruebas unitarias \(\geq 70\%\).
-  \item RNF-11: Tasa de fallos críticos \(\leq 1\%\) por hora de juego.
+  \item RNF-02: El sistema debe ejecutarse a \(\geq 30\) FPS en el dispositivo objetivo.
+  \item RNF-03 Deben usarse indicadores y guías claras y visibles en objetivos y zonas.
+  \item RNF-04: Debe haber colisiones invisibles que impidan avanzar a zonas no permitidas.
+  \item RNF-05: Compatibilidad con gafas Meta Quest 3.
+  \item RNF-06: Arquitectura modular para facilitar mantenimiento y evolución.
 \end{itemize}
 
 \subsection{Selección del entorno de desarrollo}
@@ -127,7 +120,7 @@ La narrativa del prototipo sigue el relato del ''Oso que Perdió sus Anteojos'',
 La historia trata sobre un oso de anteojos que buscaba un lago para poder tomar agua, pero pierde sus gafas cuando se agacha a beber, a lo que un pez llega y se lleva las gafas del oso.
 El oso se pone triste, a lo que el pez se siente culpable y decide devolverle las gafas al oso (Ver Figura \ref{fig:cuento-instituto}).
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{img/cuento-instituto.png}
     \caption{Imagen ilustrativa del cuento ''El Oso que Perdió sus Anteojos'' proporcionada por el INCS.}
@@ -254,3 +247,79 @@ Oso: ¡Mis gafas! ¡Gracias por recuperarlas amigo!
 Oso: ¡Gracias, compañero!¡Choquen esos 5!
 
 [Chocan los 5 y se termina el juego]
+
+\subsection{Interfaz}
+
+Con el objetivo de cumplir con los requisitos RF-01, RF-02 y RF-04 presentados en \ref{RF}, se propuso desarrollar una interfaz que priorizara el simplismo y la claridad visual, utilizando elementos de alto contraste y tipografía grande para facilitar la lectura y comprensión por parte de los niños.
+La interfaz se diseñó para ser intuitiva, con iconografía clara y botones grandes que faciliten la interacción en un entorno de realidad virtual. La idea inicial del diseño de la interfaz se encuentra en las Figuras \ref{fig:mockup-menu}, \ref{fig:mockup-pregunta}, \ref{fig:mockup-difficulty}, \ref{fig:mockup-questions}, \ref{fig:mockup-thirst}, \ref{fig:mockup-hunger} y \ref{fig:mockup-tutorial}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mockup-menu.png}
+    \caption{Imagen ilustrativa del diseño inicial del menú principal del prototipo.}
+    \label{fig:mockup-menu}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mockup-options.png}
+    \caption{Imagen ilustrativa del diseño inicial de las opciones de configuración del prototipo.}
+    \label{fig:mockup-pregunta}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mockup-difficulty.png}
+    \caption{Imagen ilustrativa del diseño inicial para el selector de dificultad del prototipo.}
+    \label{fig:mockup-difficulty}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mockup-questions.png}
+    \caption{Imagen ilustrativa del diseño inicial de las preguntas.}
+    \label{fig:mockup-questions}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mockup-thirst.png}
+    \caption{Imagen ilustrativa del indicador de saciedad para el minijuego de tomar agua.}
+    \label{fig:mockup-thirst}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mockup-hunger.png}
+    \caption{Imagen ilustrativa del indicador de saciedad para el minijuego de comer bromelias.}
+    \label{fig:mockup-hunger}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mockup-tutorial.png}
+    \caption{Imagen ilustrativa de los tutoriales.}
+    \label{fig:mockup-tutorial}
+\end{figure}
+
+\subsection{Diagrama de Flujo}
+
+El siguiente diagrama de flujo (Figura \ref{fig:flow-diagram}) muestra el órden en el que ocurren los eventos dentro del prototipo y cuándo se presenta cada uno de los minijuegos al usuario.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/flow-diagram.png}
+    \caption{Diagrama de Flujo del prototipo.}
+    \label{fig:flow-diagram}
+\end{figure}
+
+\subsection{Diagrama de casos de uso}
+
+El siguiente diagrama de casos de uso (Figura \ref{fig:use-cases-diagram}) ilustra las interacciones entre el usuario y el sistema, destacando las funcionalidades principales del prototipo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/use-cases-diagram.png}
+    \caption{Diagrama de Casos de Uso del prototipo.}
+    \label{fig:use-cases-diagram}
+\end{figure}
