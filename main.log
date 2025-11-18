@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.3)  12 NOV 2025 15:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.3)  17 NOV 2025 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Usuario/Documents/Tesis/Documento/main.tex
-(c:/Users/Usuario/Documents/Tesis/Documento/main.tex
+**c:/Users/Usuario/Documents/Tesis/Documento_tesis/main.tex
+(c:/Users/Usuario/Documents/Tesis/Documento_tesis/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -222,19 +222,26 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip64
 \f@nch@widthR=\skip65
 \@temptokenb=\toks22
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count302
+\float@exts=\toks23
+\float@box=\box53
+\@float@everytoks=\toks24
+\@floatcapt=\box54
 ) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip66
 \bibsep=\skip67
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count302
+\c@NAT@ctr=\count303
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 27.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 28.
  (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
+\l__color_backend_stack_int=\count304
 ) (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -243,26 +250,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -300,17 +307,17 @@ LaTeX Info: Redefining \% on input line 27.
 
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
+\scratchcounter=\count305
 \scratchdimen=\dimen164
-\scratchbox=\box53
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count307
+\scratchbox=\box55
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count308
 \MPscratchDim=\dimen165
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks26
 ) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
  (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
@@ -323,15 +330,15 @@ Package grfext Info: Graphics extension search list:
  (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-<img/pujlogo.png, id=243, 3142.74126pt x 1589.94pt>
+<img/pujlogo.png, id=295, 3142.74126pt x 1589.94pt>
 File: img/pujlogo.png Graphic file (type png)
 <use img/pujlogo.png>
-Package pdftex.def Info: img/pujlogo.png  used on input line 44.
+Package pdftex.def Info: img/pujlogo.png  used on input line 45.
 (pdftex.def)             Requested size: 273.14923pt x 138.1878pt.
 
 
@@ -377,12 +384,12 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 58.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+(babel)             Reported on input line 59.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.14989pt, for example:
@@ -489,7 +496,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64989pt}.
 
 [17]
-<img/tablero-kanban.png, id=454, 903.375pt x 508.14844pt>
+<img/tablero-kanban.png, id=519, 903.375pt x 508.14844pt>
 File: img/tablero-kanban.png Graphic file (type png)
 <use img/tablero-kanban.png>
 Package pdftex.def Info: img/tablero-kanban.png  used on input line 65.
@@ -507,12 +514,17 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64989pt}.
 
-[18 <./img/tablero-kanban.png>])
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.94 
+      <./img/tablero-kanban.png>]
 
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.14989pt, for example:
@@ -520,46 +532,431 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64989pt}.
 
-[19] (texts/cap_3_1.tex
+[19]) (texts/cap_3_1.tex
 
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 15.14989pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.14989pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.64989pt}.
+
 [20]
 
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
 [21]
-Overfull \hbox (52.95036pt too wide) in paragraph at lines 99--100
+
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+[22]
+Overfull \hbox (52.95036pt too wide) in paragraph at lines 90--91
 \OT1/ptm/m/n/12 des-aco-pla-dos de la l[]ogi-ca de es-ce-na, fa-ci-li-tan-do an[]ali-sis pos-te-rior y res-guar-do de pri-va-ci-dad/consentimiento
  []
 
 
 
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
-[22])
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[23]
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 116.
+
+<img/cuento-instituto.png, id=575, 499.8675pt x 650.43pt>
+File: img/cuento-instituto.png Graphic file (type png)
+<use img/cuento-instituto.png>
+Package pdftex.def Info: img/cuento-instituto.png  used on input line 125.
+(pdftex.def)             Requested size: 364.19667pt x 473.9068pt.
+
+
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[24]
+
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.139 [
+       El jugador toca la pata y se convierte en el oso] <./img/cuento-instituto.png>]
+
+LaTeX Info: Redefining \. on input line 200.
+LaTeX Info: Redefining \% on input line 200.
+LaTeX Info: Redefining \. on input line 200.
+LaTeX Info: Redefining \% on input line 200.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[26]
+
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[27]
+<img/mockup-menu.png, id=609, 1926.44719pt x 1083.29718pt>
+File: img/mockup-menu.png Graphic file (type png)
+<use img/mockup-menu.png>
+Package pdftex.def Info: img/mockup-menu.png  used on input line 258.
+(pdftex.def)             Requested size: 364.19667pt x 204.78723pt.
+<img/mockup-options.png, id=610, 1926.44719pt x 1083.29718pt>
+File: img/mockup-options.png Graphic file (type png)
+<use img/mockup-options.png>
+Package pdftex.def Info: img/mockup-options.png  used on input line 265.
+(pdftex.def)             Requested size: 364.19667pt x 204.78723pt.
+<img/mockup-difficulty.png, id=611, 1926.44719pt x 1083.29718pt>
+File: img/mockup-difficulty.png Graphic file (type png)
+<use img/mockup-difficulty.png>
+Package pdftex.def Info: img/mockup-difficulty.png  used on input line 272.
+(pdftex.def)             Requested size: 364.19667pt x 204.78723pt.
+
+
+LaTeX Info: Redefining \. on input line 276.
+LaTeX Info: Redefining \% on input line 276.
+LaTeX Info: Redefining \. on input line 276.
+LaTeX Info: Redefining \% on input line 276.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.276 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.276 
+       <./img/mockup-menu.png> <./img/mockup-options.png>]
+<img/mockup-questions.png, id=625, 1926.44719pt x 1082.54437pt>
+File: img/mockup-questions.png Graphic file (type png)
+<use img/mockup-questions.png>
+Package pdftex.def Info: img/mockup-questions.png  used on input line 279.
+(pdftex.def)             Requested size: 364.19667pt x 204.64491pt.
+<img/mockup-thirst.png, id=626, 1926.44719pt x 1083.29718pt>
+File: img/mockup-thirst.png Graphic file (type png)
+<use img/mockup-thirst.png>
+Package pdftex.def Info: img/mockup-thirst.png  used on input line 286.
+(pdftex.def)             Requested size: 364.19667pt x 204.78723pt.
+
+
+LaTeX Info: Redefining \. on input line 290.
+LaTeX Info: Redefining \% on input line 290.
+LaTeX Info: Redefining \. on input line 290.
+LaTeX Info: Redefining \% on input line 290.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.290 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.290 
+       <./img/mockup-difficulty.png> <./img/mockup-questions.png>]
+<img/mockup-hunger.png, id=633, 1926.44719pt x 1083.29718pt>
+File: img/mockup-hunger.png Graphic file (type png)
+<use img/mockup-hunger.png>
+Package pdftex.def Info: img/mockup-hunger.png  used on input line 293.
+(pdftex.def)             Requested size: 364.19667pt x 204.78723pt.
+<img/mockup-tutorial.png, id=634, 1924.94156pt x 1083.29718pt>
+File: img/mockup-tutorial.png Graphic file (type png)
+<use img/mockup-tutorial.png>
+Package pdftex.def Info: img/mockup-tutorial.png  used on input line 300.
+(pdftex.def)             Requested size: 364.19667pt x 204.95253pt.
+
+
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[30
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.304 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.304 
+       <./img/mockup-thirst.png> <./img/mockup-hunger.png>]
+<img/flow-diagram.png, id=643, 1933.2225pt x 2307.62125pt>
+File: img/flow-diagram.png Graphic file (type png)
+<use img/flow-diagram.png>
+Package pdftex.def Info: img/flow-diagram.png  used on input line 311.
+(pdftex.def)             Requested size: 455.24411pt x 543.38263pt.
+
+
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.315 
+       <./img/mockup-tutorial.png>]
+<img/use-cases-diagram.png, id=651, 1196.47pt x 924.45375pt>
+File: img/use-cases-diagram.png Graphic file (type png)
+<use img/use-cases-diagram.png>
+Package pdftex.def Info: img/use-cases-diagram.png  used on input line 322.
+(pdftex.def)             Requested size: 455.24411pt x 351.74747pt.
+)
+
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 14.62189pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.62189pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.12189pt}.
+
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.72 
+      <./img/flow-diagram.png>] (texts/cap_3_2.tex
+<img/Bosque_Andino_Iguaque.png, id=658, 1463.4675pt x 1097.60063pt>
+File: img/Bosque_Andino_Iguaque.png Graphic file (type png)
+<use img/Bosque_Andino_Iguaque.png>
+Package pdftex.def Info: img/Bosque_Andino_Iguaque.png  used on input line 12.
+(pdftex.def)             Requested size: 364.19667pt x 273.14337pt.
+
+
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+[33
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16 
+      <./img/use-cases-diagram.png>]
+<img/Terreno_unity_v1.png, id=665, 979.40906pt x 1026.83624pt>
+File: img/Terreno_unity_v1.png Graphic file (type png)
+<use img/Terreno_unity_v1.png>
+Package pdftex.def Info: img/Terreno_unity_v1.png  used on input line 22.
+(pdftex.def)             Requested size: 364.19667pt x 381.81932pt.
+
+
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+[34
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.26 
+      <./img/Bosque_Andino_Iguaque.png>]
+<img/terrain_scene.png, id=672, 1160.83687pt x 743.02594pt>
+File: img/terrain_scene.png Graphic file (type png)
+<use img/terrain_scene.png>
+Package pdftex.def Info: img/terrain_scene.png  used on input line 32.
+(pdftex.def)             Requested size: 364.19667pt x 233.11339pt.
+
+
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+[35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.36 
+      <./img/Terreno_unity_v1.png>]
+<img/climb_zone.png, id=680, 1416.79312pt x 741.52031pt>
+File: img/climb_zone.png Graphic file (type png)
+<use img/climb_zone.png>
+Package pdftex.def Info: img/climb_zone.png  used on input line 45.
+(pdftex.def)             Requested size: 364.19667pt x 190.607pt.
+
+
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+[36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.49 
+      <./img/terrain_scene.png>]
+<img/Bromelia_blender.png, id=692, 590.95781pt x 523.20468pt>
+File: img/Bromelia_blender.png Graphic file (type png)
+<use img/Bromelia_blender.png>
+Package pdftex.def Info: img/Bromelia_blender.png  used on input line 56.
+(pdftex.def)             Requested size: 273.14923pt x 241.83467pt.
+<img/Bromelia.png, id=693, 421.3341pt x 361.35pt>
+File: img/Bromelia.png Graphic file (type png)
+<use img/Bromelia.png>
+Package pdftex.def Info: img/Bromelia.png  used on input line 63.
+(pdftex.def)             Requested size: 273.14923pt x 234.2682pt.
+
+
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+[37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.67 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.67 
+      <./img/climb_zone.png> <./img/Bromelia_blender.png>]
+<img/drink_zone.png, id=704, 1423.56844pt x 730.98094pt>
+File: img/drink_zone.png Graphic file (type png)
+<use img/drink_zone.png>
+Package pdftex.def Info: img/drink_zone.png  used on input line 73.
+(pdftex.def)             Requested size: 364.19667pt x 187.00555pt.
+
+
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+[38
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.80 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.80 
+      <./img/Bromelia.png> <./img/drink_zone.png>]
+<img/bear.png, id=715, 599.99156pt x 441.90094pt>
+File: img/bear.png Graphic file (type png)
+<use img/bear.png>
+Package pdftex.def Info: img/bear.png  used on input line 83.
+(pdftex.def)             Requested size: 273.14923pt x 201.17987pt.
+<img/preview-fish.png, id=717, 1595.20969pt x 1005.00468pt>
+File: img/preview-fish.png Graphic file (type png)
+<use img/preview-fish.png>
+Package pdftex.def Info: img/preview-fish.png  used on input line 98.
+(pdftex.def)             Requested size: 364.19667pt x 229.44402pt.
+)
 
 LaTeX Info: Redefining \. on input line 74.
 LaTeX Info: Redefining \% on input line 74.
 LaTeX Info: Redefining \. on input line 74.
 LaTeX Info: Redefining \% on input line 74.
-[23]
+[39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.74 
+      <./img/bear.png>]
+
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+[40
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.77 \chapter
+             {Implementación} <./img/preview-fish.png>]
 Cap\'{\i }tulo 5.
 
 
-[24
+[41
 
 ]
 Cap\'{\i }tulo 6.
 (texts/cap_6.tex
 
-[25
+[42
 
 ]
 Underfull \hbox (badness 3657) in paragraph at lines 27--27
@@ -612,9 +1009,47 @@ Overfull \hbox (20.43427pt too wide) in paragraph at lines 44--59
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
 
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 15.31775pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.31775pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.81775pt}.
+
+[43
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.60 
+     ]
+
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 15.31775pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.31775pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.81775pt}.
+
+[44
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.102 E
+       stas preguntas breves priorizan comprensión y respuesta rápida acor...
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.102 E
+       stas preguntas breves priorizan comprensión y respuesta rápida acor...])
 
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
@@ -627,34 +1062,26 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.81775pt}.
 
-[26])
-
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
-
-Package fancyhdr Warning: \headheight is too small (14.5pt): 
-(fancyhdr)                Make it at least 15.31775pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.31775pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.81775pt}.
-
-[27]
+[45
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.83 \chapter
+             {Conclusiones}]
 Cap\'{\i }tulo 7.
 
 
-[28
+[46
 
 ]
 Cap\'{\i }tulo 8.
 
 
-[29
+[47
 
 ] (main.bbl
 
-[30
+[48
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 38--46
@@ -683,14 +1110,14 @@ Overfull \hbox (122.07509pt too wide) in paragraph at lines 38--46
 
 
 
-[31
+[49
 
 ])
 
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.14989pt, for example:
@@ -698,7 +1125,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64989pt}.
 
-[32] (main.aux
+[50] (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -706,21 +1133,25 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9B1A12E5672D8E042D61F1FBAA1D7D91;11175.
+(rerunfilecheck)             Checksum: 05F37A6202FC17F419C1624999ECA1F0;13762.
  ) 
 Here is how much of TeX's memory you used:
- 11577 strings out of 468080
- 184200 string characters out of 5424804
- 622971 words of memory out of 5000000
- 39932 multiletter control sequences out of 15000+600000
+ 11892 strings out of 468080
+ 190708 string characters out of 5424804
+ 622732 words of memory out of 5000000
+ 40171 multiletter control sequences out of 15000+600000
  643884 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,908b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,83p,914b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (33 pages, 429874 bytes).
+Output written on main.pdf (51 pages, 43615152 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 158 named destinations out of 1000 (max. 500000)
- 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 879 PDF objects out of 1000 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
+ 690 words of extra memory for PDF output out of 10000 (max. 10000000)
 
