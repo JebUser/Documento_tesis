@@ -23,3 +23,85 @@ Se seleccionó un pez de un color rojo vibrante que contaba con una cantidad ade
     \caption{Muestra del modelo 3D seleccionado para el pez en Blender.}
     \label{fig:preview-fish}
 \end{figure}
+
+\subsection{Configuración del Esqueleto}
+
+Para poder realizar las animaciones del Oso de Anteojos y a su vez permitir al jugador poder convertirse en el mismo, fue necesario configurar un esqueleto (rig) que permitiera manipular las diferentes partes del modelo 3D.
+La integración del esqueleto permitiría manipular cada una de las partes del modelo 3D de tal forma que se pudieran crear animaciones fluidas y realistas.
+Gracias a la poca complejidad del modelo 3D y su parecido a la anatomía, se optó por utilizar la herramienta de rigging automática de \textit{Mixamo} para generar el esqueleto del Oso de Anteojos (Ver Figura \ref{fig:rig-mixamo}).
+Una vez configurado, se exportó el modelo 3D con el esqueleto en formato \textit{FBX} para poder revisarlo en la herramienta Blender (Ver Figura \ref{fig:rig-blender})
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/rig-mixamo.png}
+    \caption{Muestra del Oso de Anteojos con el esqueleto integrado en Mixamo.}
+    \label{fig:rig-mixamo}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/rig-blender.png}
+    \caption{Muestra del Oso de Anteojos con el esqueleto integrado en Blender.}
+    \label{fig:rig-blender}
+\end{figure}
+
+\subsection{Animaciones:}
+
+\subsubsection{Oso de Anteojos:}
+
+Para el Oso de Anteojos, se consideró la necesidad de crear animaciones que fueran realistas y atractivas para el público objetivo. Esto se buscó con el fin de hacer que
+el jugador se sintiera más inmerso en el entorno del juego y pudiera identificarse con el personaje. Para poder lograr esto, se optó por utilizar la técnica del \textit{body tracking}. 
+Esta técnica lo que busca es capturar los movimientos del cuerpo humano y poder adaptarlos a un esqueleto virtual. Para grabar las animaciones, se hizo uso del laboratorio de captura de movimiento
+de la Pontificia Universidad Javeriana Cali, el cual cuenta con un sistema de captura de movimiento basado en cámaras infrarrojas y marcadores reflectivos. La persona encargada de grabar las animaciones (Ver Figura \ref{fig:animation-recording})
+se colocó los marcadores reflectivos de acuerdo a la distribución establecida por el software \textit{Qualisys} (Ver Figura \ref{fig:markers-distribution}) para que el sistema pudiera capturar los movimientos de manera precisa (Ver Figura \ref{fig:software-preview}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/animation-recording.jpg}
+    \caption{Proceso de Captura de Movimiento en el laboratorio de la PUJ Cali.}
+    \label{fig:animation-recording}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/markers-distribution.png}
+    \caption{Distribución de los marcadores reflectivos para la captura de movimiento.}
+    \label{fig:markers-distribution}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/software-preview.jpg}
+    \caption{Vista de la captura de movimiento desde el software.}
+    \label{fig:software-preview}
+\end{figure}
+
+Ya con las animaciones grabadas, se procedió a exportarlas en formato \textit{FBX} para luego importarlas en Blender y hacer los ajustes necesarios para descartar los fotogramas sobrantes y corregir posibles errores en las animaciones (Ver Figura \ref{fig:blender-animation-editing}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/blender-animation-editing.png}
+    \caption{Edición de las animaciones en Blender.}
+    \label{fig:blender-animation-editing}
+\end{figure}
+
+Gracias a que tanto los esqueletos generados por \textit{Mixamo} como los obtenidos por \textit{Qualisys} son configurados para ser de tipo \textit{Humanoide}, fue posible realizar la transferencia de las animaciones grabadas al esqueleto del Oso de Anteojos sin mayores inconvenientes. 
+En la herramienta de Unity, se establecieron ambos esqueletos como tipo \textit{Humanoide} y se implementaron las animaciones dentro del esqueleto del Oso de Anteojos (Ver Figura \ref{fig:animation-transfer}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/animation-transfer.png}
+    \caption{Vista previa de las animaciones funcionando con el esqueleto del Oso de Anteojos.}
+    \label{fig:animation-transfer}
+\end{figure}
+
+\subsubsection{Pez:}
+
+Para el caso del pez, como su modelo 3D no cuenta con extremidades tan notorias, se optó por crear animaciones simples que simularan el movimiento de nado del pez.
+Para ello, simplemente se hizo uso de la misma herramienta de Unity, donde se crearon animaciones que trasladaban y rotaban el modelo 3D del pez para simular el movimiento de nado (Ver Figura \ref{fig:fish-animation}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/fish-animation.png}
+    \caption{Vista previa de las animaciones del pez en Unity.}
+    \label{fig:fish-animation}
+\end{figure}
