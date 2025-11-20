@@ -12,6 +12,25 @@
 \usepackage{float}
 \usepackage{amssymb}
 
+% ============================
+% ENTORNOS PARA DISEÑO DE GUIÓN
+% ============================
+\usepackage{setspace}
+\usepackage{xcolor}
+
+% Entorno para acotaciones escénicas
+\newenvironment{stage}
+{\begingroup\itshape\color{gray}\begin{quote}}
+{\end{quote}\endgroup}
+
+% Línea de diálogo con nombre en negrita
+\newcommand{\dialogue}[2]{\noindent\textbf{#1:} #2\par\vspace{4pt}}
+
+% Entorno general del guion
+\newenvironment{play}
+{\begin{spacing}{1.2}}
+{\end{spacing}}
+
 \setlength{\headheight}{14.5pt}
 \pagestyle{fancy}
 \fancyhead{}

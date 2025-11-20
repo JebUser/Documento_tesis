@@ -130,123 +130,156 @@ El oso se pone triste, a lo que el pez se siente culpable y decide devolverle la
 No obstante, para poder adaptar la narrativa al entorno de realidad virtual y a los objetivos pedagógicos planteados, se vio necesario realizar algunas modificaciones en la historia original. Con ayuda de los profesionales del INCS, la historia fue adaptada para incluir nuevos elementos que permitieran realizar los minijuegos propuestos. Por ejemplo, se añadió la necesidad del oso de alimentarse con bromelias y tener que atrapar al pez, lo que permitió incluir minijuegos relacionados con estas actividades. De esta manera, el relato del ''Oso que Perdió sus Anteojos''
 quedó de la siguiente manera:
 
-Narrador: Esta es la historia del oso que perdió sus anteojos.
+\begin{play}
 
-Oso: ¡Hola, amigo! ¿Cómo estás? ¡Espero que muy bien! (rugido de tripas) Tengo muuuucha hambre, ¿me ayudas a encontrar comida? Me gustan mucho las bromelias
+\subsection*{Historia del Oso y sus Anteojos}
 
-[El oso extiende su pata, se le avisa al jugador por texto, audio y video que toque la pata del oso.]
+\dialogue{Narrador}{Esta es la historia del oso que perdió sus anteojos.}
 
-[El jugador toca la pata y se convierte en el oso]
+\dialogue{Oso}{¡Hola, amigo! ¿Cómo estás? ¡Espero que muy bien! (rugido de tripas) Tengo muuuucha hambre, ¿me ayudas a encontrar comida? Me gustan mucho las bromelias}
 
-[ Se teletransporta a la zona 1]
+\begin{stage}
+El oso extiende su pata, se le avisa al jugador por texto, audio y video que toque la pata del oso.
+El jugador toca la pata y se convierte en el oso.
+Se teletransporta a la zona 1.
+\end{stage}
 
-Narrador: El señor oso tiene mucha hambre, ¿cuál es la comida favorita del oso?
+\subsubsection*{Primera elección: ¿Qué come el oso?}
 
-[Se abren 3 cuadros de selección con los siguientes textos]:
+\dialogue{Narrador}{El señor oso tiene mucha hambre, ¿cuál es la comida favorita del oso?}
+
 \begin{itemize}
-  \item	Manzana, acompañado de una imagen del objeto y el audio del objeto hablado.
+  \item Manzana, acompañado de una imagen del objeto y el audio del objeto hablado.
   \item Bromelia, acompañado de una imagen del objeto y el audio del objeto hablado.
   \item Zanahoria, acompañado de una imagen del objeto y el audio del objeto hablado.
 \end{itemize}
 
-[Si se selecciona mal, la opción se oscurece y muestra una ''X'' roja, deshabilitándose acompañado de un sonido de error]
+\begin{stage}
+Si se selecciona mal, la opción se oscurece y muestra una ``X'' roja, deshabilitándose acompañado de un sonido de error.
+\end{stage}
 
-[Se selecciona aleatoriamente los siguientes diálogos]:
-\begin{itemize}
-  \item Narrador: Mmm nooo, creo que al oso no le gusta eso.
-  \item Narrador: ¡Estuviste cerca!, pero el oso no quiere eso.
-  \item Narrador: Noo, no es correcto, ¡inténtalo nuevamente!
-\end{itemize}
+\textbf{Diálogos aleatorios al fallar:}
 
-[Si se selecciona bien, se reproduce un sonido de acierto acompañado de un chulo verde al cuadro de selección]
+\dialogue{Narrador}{Mmm nooo, creo que al oso no le gusta eso.}
+\dialogue{Narrador}{¡Estuviste cerca!, pero el oso no quiere eso.}
+\dialogue{Narrador}{Noo, no es correcto, ¡inténtalo nuevamente!}
 
-Oso: ¡Muy bien! ¡Ese árbol de ahí tiene bromelias! ¿Me ayudarías a conseguir las bromelias?
+\begin{stage}
+Si se selecciona bien, se reproduce un sonido de acierto acompañado de un chulo verde al cuadro de selección.
+\end{stage}
 
-[Comienza un minijuego de escalar: Se da un tutorial vía texto, audio y video incluido para el desarrollo del juego]
+\dialogue{Oso}{¡Muy bien! ¡Ese árbol de ahí tiene bromelias! ¿Me ayudarías a conseguir las bromelias?}
 
-[Termina el minijuego]
+\subsubsection*{Minijuego: Escalar}
 
-Oso: Mmm qué rico, ¡muchas gracias! (jadeante) Ahora tengo sed.
+\begin{stage}
+Comienza un minijuego de escalar: Se da un tutorial vía texto, audio y video incluido para el desarrollo del juego.  
+Termina el minijuego.
+\end{stage}
 
-Narrador: El oso tiene sed, ¿qué puede tomar el oso para calmar su sed?
+\dialogue{Oso}{Mmm qué rico, ¡muchas gracias! (jadeante) Ahora tengo sed.}
 
-[Se abren 3 cuadros de selección con los siguientes textos]:
+\subsubsection*{Segunda elección: ¿Qué puede tomar el oso?}
+
+\dialogue{Narrador}{El oso tiene sed, ¿qué puede tomar el oso para calmar su sed?}
+
 \begin{itemize}
   \item Agua, acompañado de una imagen del objeto y el audio del objeto hablado.
   \item Café, acompañado de una imagen del objeto y el audio del objeto hablado.
   \item Jugo, acompañado de una imagen del objeto y el audio del objeto hablado.
 \end{itemize}
-[Si se selecciona mal, la opción se oscurece y muestra una ''X'' roja, deshabilitándose acompañado de un sonido de error]
 
-[Se selecciona aleatoriamente los siguientes diálogos]:
-\begin{itemize}
-  \item Narrador: Nooo, el oso no puede tomar eso.
-  \item Narrador: Mmm, creo que no es correcto.
-  \item Narrador: Noo, no es correcto, ¡inténtalo nuevamente!
-\end{itemize}
+\begin{stage}
+Si se selecciona mal, la opción se oscurece y muestra una ``X'' roja, deshabilitándose acompañado de un sonido de error.
+\end{stage}
 
-[Si se selecciona bien, se reproduce un sonido de acierto acompañado de un chulo verde al cuadro de selección, y se teletransporta la zona cerca al lago]
+\textbf{Diálogos aleatorios al fallar:}
+\dialogue{Narrador}{Nooo, el oso no puede tomar eso.}
+\dialogue{Narrador}{Mmm, creo que no es correcto.}
+\dialogue{Narrador}{Noo, no es correcto, ¡inténtalo nuevamente!}
 
-Narrador: ¡Mira! ¡Un vaso para tomar agua! ¿Ayudas al oso a tomar agua?
+\begin{stage}
+Si se selecciona bien, se reproduce un sonido de acierto acompañado de un chulo verde al cuadro de selección, y se teletransporta la zona cerca al lago.
+\end{stage}
 
-[Empieza el minijuego de tomar agua, el niño debe introducir el vaso al lago, y luego hacer el gesto de tomar agua (3 veces en fácil y 5 veces en difícil) hasta que se llene una barra]
+\dialogue{Narrador}{¡Mira! ¡Un vaso para tomar agua! ¿Ayudas al oso a tomar agua?}
 
-[Una vez terminado del minijuego, se muestran las gafas del oso en frente del jugador para posteriormente caer al lago]
+\begin{stage}
+Empieza el minijuego de tomar agua, el niño debe introducir el vaso al lago, y luego hacer el gesto de tomar agua (3 veces en fácil y 5 veces en difícil) hasta que se llene una barra.  
+Una vez terminado del minijuego, se muestran las gafas del oso en frente del jugador para posteriormente caer al lago.
+\end{stage}
 
-Oso: ¡Oh no! Mis gafas (en tono triste y llorando)
+\dialogue{Oso}{¡Oh no! Mis gafas (en tono triste y llorando)}
 
-Narrador: ¡Oh no! El oso está llorando mucho, ¿cómo crees que se siente el oso?
+\subsubsection*{Tercera elección: ¿Cómo se siente el oso?}
 
-[Se abren 3 cuadros de selección con los siguientes textos]:
+\dialogue{Narrador}{¡Oh no! El oso está llorando mucho, ¿cómo crees que se siente el oso?}
+
 \begin{itemize}
   \item Enojado, acompañado de una imagen representando la emoción y el audio de la emoción hablada. 
   \item Alegre, acompañado de una imagen representando la emoción y el audio de la emoción hablada.
   \item Triste, acompañado de una imagen representando la emoción y el audio de la emoción hablada.
 \end{itemize}
-[Si se selecciona mal, la opción se en oscurecer descartándose, deshabilitándose acompañado de un sonido de error]
 
-[Se selecciona aleatoriamente los siguientes diálogos]:
-\begin{itemize}
-  \item Narrador:  ¡Nooo! El oso no está enojado.
-  \item	Narrador: ¡Casi aciertas! Pero el oso no se siente así.
-  \item	Narrador: Noo, no es correcto, ¡inténtalo nuevamente!
-\end{itemize}
+\begin{stage}
+Si se selecciona mal, la opción se en oscurecer descartándose, deshabilitándose acompañado de un sonido de error.
+\end{stage}
 
-[Aparece un pez y agarra las gafas]
+\textbf{Diálogos aleatorios al fallar:}
+\dialogue{Narrador}{¡Nooo! El oso no está enojado.}
+\dialogue{Narrador}{¡Casi aciertas! Pero el oso no se siente así.}
+\dialogue{Narrador}{Noo, no es correcto, ¡inténtalo nuevamente!}
 
-Pez: Me gustan estas gafas, ¡ahora son mías! (Tono malicioso)
+\begin{stage}
+Aparece un pez y agarra las gafas.
+\end{stage}
 
-Oso: ¡Noo, son mías! (molesto)
+\dialogue{Pez}{Me gustan estas gafas, ¡ahora son mías! (Tono malicioso)}
 
-[Comienza el minijuego: el niño deberá atrapar al pez (dependiendo de la dificultad, el pez es más rápido o lento)]
+\dialogue{Oso}{¡Noo, son mías! (molesto)}
 
-[El niño logra atrapar al pez]
+\begin{stage}
+Comienza el minijuego: el niño deberá atrapar al pez (dependiendo de la dificultad, el pez es más rápido o lento).
+El niño logra atrapar al pez.
+\end{stage}
 
-Pez: Vale, perdón perdón, tranquilo, es broma. Suéltame por favor.
+\dialogue{Pez}{Vale, perdón perdón, tranquilo, es broma. Suéltame por favor.}
 
-[El jugador suelta al pez]
+\begin{stage}
+El jugador suelta al pez.
+\end{stage}
 
-Pez: Toma [El pez intenta darle las gafas al oso, pero se le caen al agua hacia el rio]
+\dialogue{Pez}{Toma}  
+\begin{stage}
+El pez intenta darle las gafas al oso, pero se le caen al agua hacia el río.
+\end{stage}
 
-Pez: ¡Oh no! ¡Lo siento!
+\dialogue{Pez}{¡Oh no! ¡Lo siento!}
 
-Oso: Yo quiero mis gafas, ¿me ayudas?
+\dialogue{Oso}{Yo quiero mis gafas, ¿me ayudas?}
 
-Pez: Sí, yo te ayudo, confía en mi
+\dialogue{Pez}{Sí, yo te ayudo, confía en mi}
 
-[El pez se sumerge para recuperar las gafas]
+\begin{stage}
+El pez se sumerge para recuperar las gafas.  
+El pez emerge a la superficie con las gafas.
+\end{stage}
 
-[El pez emerge a la superficie con las gafas]
+\dialogue{Oso}{¡Mis gafas! ¡Gracias por recuperarlas amigo!}
 
-Oso: ¡Mis gafas! ¡Gracias por recuperarlas amigo!
+\begin{stage}
+El jugador agarra las gafas y se las pone.  
+El jugador vuelve a transformarse en humano.
+\end{stage}
 
-[El jugador agarra las gafas y se las pone]
+\dialogue{Oso}{¡Gracias, compañero!¡Choquen esos 5!}
 
-[El jugador vuelve a transformarse en humano]
+\begin{stage}
+Chocan los 5 y se termina el juego.
+\end{stage}
 
-Oso: ¡Gracias, compañero!¡Choquen esos 5!
+\end{play}
 
-[Chocan los 5 y se termina el juego]
 
 \subsection{Interfaz}
 
