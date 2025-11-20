@@ -1,0 +1,384 @@
+\chapter{Implementación}
+
+Para el desarrollo del prototipo, se utilizó el motor de desarrollo Unity 3D. Esto se debe a que el motor cuenta con gráficos optimizados, 
+herramientas de creación de perfiles y kit de herramientas \textit{XR Interaction} que ayudan a agilizar el desarrollo y a reducir los requisitos de 
+codificación entre plataformas \cite{unityxr}, por supuesto, incluyendo las Meta Quest. Además, Unity cuenta con un \textit{renderer} llamado \textit{Universal Render Pipeline (URP)}, 
+el cual permite optimizar los gráficos para dispositivos de RV \cite{unityxr}. Para poder desarrollar las mecánicas de interacción en RV, se utilizó el paquete \textit{XR Interaction Toolkit} de Unity,
+el cual permite establecer al jugador como \textit{Interactor} y a los objetos con los que va a interactuar como \textit{Interactables}, permitiendo así la interacción con objetos dentro del entorno.
+A continuación, se describen los aspectos más relevantes del desarrollo del prototipo.
+
+\section{Manejo de Escenas:}
+
+El prototipo se encuentra divido en varias escenas, cada una con un propósito específico. La escena principal es la \textit{MainMenu}, desde la cual el usuario puede iniciar la experiencia, seleccionar la dificultad, ajustas los parámetros o salir de la aplicación. 
+Las siguientes escenas corresponden a los dos niveles de dificultad: \textit{TerrainRookie} y \textit{TerrainExpert}. Cada una de estas contienen los mismo elementos dentro del espacio virtual, con la diferencia en el nivel de dificultad de los minijuegos.
+El ajuste a la difultad de cada uno de los minijuegos se explicará a mayor detalle más adelante.
+
+\section{Menú Principal:}
+
+Para la creación del menú principal, se utlilizó el UI Canvas de Unity adaptado para RV. Esto permitía adaptar los elementos del menú que fueran interactuables
+para que pudieran ser seleccionados mediante la interacción con los hápticos del usuario. Además, el proceso de renderizado del menú fue optimizado gracias a la 
+implementación de un \textit{OVR Overlay Canvas} del SDK de Oculus, el cual permite renderizar el menú de manera más eficiente en dispositivos Meta Quest.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/mainmenu-ingame.png}
+    \caption{Vista previa del menú principal dentro del Prototipo.}
+    \label{fig:mainmenu-ingame}
+\end{figure}
+
+Para el caso de manejar las diferentes opciones de configuración (Ver Figura \ref{fig:optionsmenu-ingame}), se tuvo que implementar varios \textit{scripts} en el lenguaje de programación C\#.
+El objetivo de estos \textit{scripts} era el de acceder a los valores de las diferentes opciones del menú y poder almacenarlos para que fueran utilizados en las escenas de los minijuegos.
+Por ejemplo, para el caso de la opción de ajustar el volumen del audio, se creó un script que accedía al valor del \textit{slider} correspondiente y lo almacenaba en una variable. Así, al iniciar cualquiera de las escenas, 
+el valor almacenado era utilizado para ajustar el volumen del audio del juego.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/optionsmenu-ingame.png}
+    \caption{Vista previa del menú de opciones dentro del Prototipo.}
+    \label{fig:optionsmenu-ingame}
+\end{figure}
+
+El reto en este caso fue el de lograr que los \textit{GameObjects} encargados de pasar los valores a las escenas de los minijuegos no fueran destruidos al cambiar de escena. Para esto, se utilizó el método \textit{DontDestroyOnLoad()} de Unity,
+el cual permite que un \textit{GameObject} persista entre escenas (Ver Figura \ref{fig:handlers-preserved}). De esta manera, se logró que los valores de las opciones de configuración se mantuvieran al efectuar el cambio.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/handlers-preserved.png}
+    \caption{GameObjects encargados de guardar las opciones de configuración preservados entre escenas.}
+    \label{fig:handlers-preserved}
+\end{figure}
+
+Para la implementación de la opción de seleccionar la dificultad (Ver Figura \ref{fig:difficultymenu-ingame}), simplemente se creó un \textit{script} que cambiara a la escena que corresponde a la dificultad seleccionada 
+una vez el usuario presionara el botón con la dificultad deseada.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/difficultymenu-ingame.png}
+    \caption{Vista previa del menú de selección de dificultad dentro del Prototipo.}
+    \label{fig:difficultymenu-ingame}
+\end{figure}
+
+Por último, para la opción de salir de la aplicación, se utilizó el método \textit{Application.Quit()} de Unity, el cual cierra la aplicación cuando es llamado.
+
+\section{Transformación en el Oso de Anteojos:}
+
+Una de las mecánicas principales del prototipo es la transformación del usuario en un oso de anteojos. Para lograr esto, se hizo uso del modelo 3D del oso de anteojos con el esqueleto asignado explicado en \ref{bear-rig} y, 
+con ayuda del paquete de \textit{Animation Rigging} de Unity, se le aplicaron \textit{Inverse Kinematics (IK)} a las extremidades del esqueleto del oso (Ver Figura \ref{fig:bear-ik}), con el objetivo de que las manos y la cabeza siguieran los movimientos de los hápticos y la cámara del usuario.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/bear-ik.png}
+    \caption{Configuración de \textit{Inverse Kinematics} para el esqueleto del oso de anteojos.}
+    \label{fig:bear-ik}
+\end{figure}
+
+El problema con esta implementación es que, al ser el oso de anteojos mucho más ancho que el usuario, la cámara del mismo quedaba dentro del modelo 3D, lo que provocaba que se pierdera la sensación de inmersión.
+Dado que la cámara está asociada al \textit{headset} del usuario, no se podía mover la cámara hacia adelante sin afectar la experiencia de RV. Por lo tanto, se decidió mover el modelo 3D del oso de anteojos hacia atrás en el eje Z (Ver Figura \ref{fig:bear-offset}),
+y aplicar un \textit{script} que ajustara la posición y rotación del modelo 3D respecto a la posición y rotación de los hápticos y la cabeza.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/bear-offset.png}
+    \caption{Ajuste de la posición del modelo 3D del oso de anteojos para mejorar la experiencia de inmersión.}
+    \label{fig:bear-offset}
+\end{figure}
+
+\subsection{Implementación del algoritmo:}
+
+El \textit{script} toma la posición y rotación de los hápticos y la cabeza del usuario, genera objetivos de IK para cada una de las partes y hace que todo el cuerpo gire poco a poco dependiendo de si la dirección de la cabeza 
+supera un umbral establecido y qué tan alineadas se encuentran las manos.
+\subsubsection{Mapeo VR a IK:}
+Se crea una clase llamada \textit{VRMap} que obtiene la posición y rotación del referente VR (cabeza o manos) y la asigna a un objetivo de IK correspondiente.
+La siguiente fórmula se utiliza para calcular la posición del objetivo de IK:
+
+\begin{equation}
+    p_{ik} = R_{vr}o + p_{vr}
+\end{equation}
+
+Donde $R_{vr}$ representa la matriz de rotación del referente VR, $p_{vr}$ la posición del mismo y $o$ un vector \textit{offset} asignado arbitrariamente.
+
+Para el caso de la rotación, se utiliza la siguiente fórmula:
+
+\begin{equation}
+    q_{ik} = q_{vr}q_{off}
+\end{equation}
+
+Donde $q_{vr}$ es la rotación del referente VR y $q_{off}$ es una rotación de \textit{offset} asignada arbitrariamente.
+
+\subsubsection{Decidir si el cuerpo gira o no:}
+
+Se crea una proyección de la dirección de la cabeza en el plano XZ, y se calcula el ángulo de la proyección siguiendo la siguiente fórmula:
+
+\begin{equation}
+    \theta_{head} = atan2(x, z) \times \frac{180}{\pi}
+\end{equation}
+
+Donde $(x, z)$ son las componentes X y Z de la proyección de la dirección frontal de la cabeza.
+
+Luego, se calcula el punto medio entre las dos manos de la siguiente manera:
+
+\begin{equation}
+    p_{mid} = \frac{p_{left} + p_{right}}{2}
+\end{equation}
+
+Con estos valores, se calcula un "yaw de torso" con un vector que va desde la cabeza hasta el punto medio calculado y este se proyecta hacia el plano XZ.
+Ahora, se calcula el ángulo de esta proyección de la misma manera que con la cabeza:
+
+\begin{equation}
+    \theta_{torso} = atan2(x, z) \times \frac{180}{\pi}
+\end{equation}
+
+Donde esta vez, $(x, z)$ son las componentes X y Z de la proyección del vector desde la cabeza hasta el punto medio de las manos.
+
+Con ello, se comparan los ángulos con la función \textit{Mathf.DeltaAngle()} de Unity, representados de la siguiente manera:
+
+\begin{equation}
+    \Delta_{head-body} = |\Delta(bodyYaw, \theta_{head})|
+\end{equation}
+Para calcular cuánto difiere la cabeza del cuerpo.
+
+\begin{equation}
+    \Delta_{torso-head} = |\Delta(\theta_{torso}, \theta_{head})|
+\end{equation}
+Para comprobar qué tan alineadas están las manos con la cabeza
+
+Finalmente, se decide si el cuerpo debe girar o no dependiendo de los siguientes umbrales:
+\begin{itemize}
+    \item Si $\Delta_{head-body} >  yawDeadZone$ y $\Delta_{torso-head} <= handsAlignWindow$, el cuerpo gira hacia la dirección de la cabeza.
+    \item Si no se cumple lo anterior, el cuerpo no gira.
+\end{itemize}
+
+Donde $yawDeadZone$ y $handsAlignWindow$ son valores ajustables que definen el umbral para que el cuerpo gire y el margen de alineación de las manos, respectivamente.
+
+También, esta condición se debe mantener por un $holdTime$ tiempo definido para evitar que el cuerpo gire de manera abrupta.
+
+El giro del cuerpo hacia la cabeza se ve reflejado de la siguiente manera:
+
+\begin{equation}
+    \delta = \Delta(bodyYaw, \theta_{head})
+\end{equation}
+
+\begin{equation}
+    step = sign(\delta) \times yawFollowSpeed \times \Delta t
+\end{equation}
+
+Donde $yawFollowSpeed$ es una variable ajustable que define la velocidad de giro del cuerpo.
+Si se cumple que $|\delta| < |step|$, entonces el cuerpo gira directamente hacia la cabeza sin importar la velocidad ($step = \delta$).
+El cuerpo se movería de la forma $bodyYaw = bodyYaw + step$.
+
+\subsection{Corrección de las Manos:}
+
+Debido al cambio de distancia entre el modelo del Oso de Anteojos y el usuario, las manos del oso no alcanzaban a coincidir con la posición de los hápticos del usuario.
+Para solucionar esto, se creó un modelo de 3D que únicamente tuviera las manos del oso de anteojos (Ver Figura \ref{fig:hand-correction-model}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/hand-correction-model.png}
+    \caption{Modelo 3D utilizado para la corrección de las manos del oso de anteojos.}
+    \label{fig:hand-correction-model}
+\end{figure}
+
+Este modelo fue escalado y posicionado de tal manera que las manos del modelo coincidieran con la posición de los hápticos del usuario. Luego de aplicarle los IK a las manos 
+para que pudieran seguir a los hápticos, se modificó el renderizado del modelo para que este no mostrara ninguna sombra. Así, las sombras de las manos que aparecieran en el entorno 
+serían las del modelo original del oso de anteojos, dando la ilusión de que las manos del oso estaban en la posición correcta (Ver Figura \ref{fig:pov-player}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/pov-player.png}
+    \caption{Vista en primera persona del usuario con las manos corregidas.}
+    \label{fig:pov-player}
+\end{figure}
+
+\section{Manejo de las Voces:}
+
+Para la implementación de las voces del oso de anteojos, se utilizó el sistema de audio predeterminado de Unity. Las voces del oso de anteojos y el pez, fueron 
+grabadas por los mismos desarrolladores del prototipo, mientras que la voz del narrador fue hecha por un voluntario que se ofreció a colaborar con el proyecto.
+Las fuentes de audio se manejaron mediante \textit{Audio Sources} asignados a \textit{GameObjects} específicos dentro de la escena. Cuando se trataban de audios en 2D 
+como la voz del narrador y la del oso cuando el jugador se convierte en él, estos se reproducían directamente desde un mismo \textit{Audio Source} asignado a un \textit{GameObject} vacío en la escena.
+Para los audios en 3D, como la voz del pez y la del oso de anteojos cuando el jugador no ha aplicado el \textit{BodyTransfer}, se asignaron \textit{Audio Sources} a los modelos 3D correspondientes.
+Para la reproducción de los audios, se creó un \textit{script} en C\# que manejaba la reproducción de los mismos dependiendo del flujo de la historia y las opciones seleccionadas en las preguntas.
+
+\section{Manejo de los Teletransportes:}
+
+Para poder evitar el \textit{motion-sickness} al jugador, se optó por hacer que el avance hacia las distintas zonas fuera por medio de teletransportación. De esta manera, 
+se genera menos movimiento y, por tanto, menos malestar. La selección de la zona a teletransportar la gestión un \textit{script} que obtiene todos los puntos de teletransporte
+(Ver Figura \ref{tp-points}) y selecciona el que va acorde con el momento en la historia.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/tp-points.png}
+    \caption{\textit{GameObjects} que guardan las ubicaciones a las que se va a teletransportar al usuario.}
+    \label{fig:tp-points}
+\end{figure}
+
+\section{Minijuegos de Preguntas:}
+
+Para la implementación de los minijuegos de preguntas, se creó un \textit{Canvas} de Unity adaptado para RV y optimizado gracias al \textit{OVR Overlay Canvas}, el cual mostraba las preguntas y las opciones de respuesta en un formato interactivo. 
+Cada opción de respuesta era un \textit{button} que podía ser seleccionado mediante la interacción con los hápticos del usuario.
+El flujo de las preguntas y respuestas fue manejado mediante un \textit{GameObject} vacío con un \textit{script} en C\# que se encargaba de ir presentando las preguntas y opciones de respuesta a medida que el flujo de la historia avanzaba. También,
+se encargaba de ocultar el \textit{Canvas} cuando el minijuego de preguntas terminaba. Para el caso en el que el usuario marcara la respuesta incorrecta, se le mostraba una gran ''X'' roja sobre la opción seleccionada, se reproducía un sonido de error y
+un mensaje de voz del narrador indicando que la respuesta era incorrecta y se le desactivada esa opción para que no la pudiera volver a seleccionar (Ver Figura \ref{fig:incorrect-example}). En caso de que el usuario seleccionara la respuesta correcta,
+se le mostraba una gran "\checkmark" verde sobre la opción seleccionada, se reproducía un sonido de acierto y todas las opciones se desactivaban para posteriormente ocultarse toda la pregunta (Ver Figura \ref{fig:correct-example}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/incorrect-example.png}
+    \caption{Ejemplo de respuesta incorrecta en el minijuego de preguntas.}
+    \label{fig:incorrect-example}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/correct-example.png}
+    \caption{Ejemplo de respuesta correcta en el minijuego de preguntas.}
+    \label{fig:correct-example}
+\end{figure}
+
+\subsection{Comida Favorita del Oso de Anteojos:}
+
+Para esta pregunta, se le presenta al niño una pregunta con tres opciones de respuesta como se muestra en la Figura \ref{fig:food-question}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/food-question.png}
+    \caption{Pregunta sobre la comida favorita del oso de anteojos.}
+    \label{fig:food-question}
+\end{figure}
+
+La opción correcta es la opción B, que corresponde a las bromelias. La razón por la cual se seleccionó la bromelia como la 
+comida favorita del oso de anteojos es porque, según la Universidad Nacional de Colombia, los osos de anteojos se conocen por ser omnívoros, pero prefieren
+comer bromelias y frutas \cite{beardiet}. Además, las bromelias hacen parte de la flora colombiana, lo que ayuda a conocer más sobre la biodiversidad del país.
+El objetivo de esta pregunta es poner a prueba la capacidad de comprensión auditiva y/o textual y de memorización del niño, ya que la respuesta correcta es mencionada
+por el oso de anteojos antes de que se presente la pregunta.
+
+\subsection{Líquido para Beber:}
+
+Para esta pregunta, se le presenta al niño una pregunta con tres opciones de respuesta como se muestra en la Figura \ref{fig:drink-question}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/drink-question.png}
+    \caption{Pregunta sobre el líquido que bebe el oso de anteojos.}
+    \label{fig:drink-question}
+\end{figure}
+
+La opción correcta es la opción A, que corresponde al agua. El objetivo de esta pregunta es poner a prueba la capacidad de intuición y reconocimiento del entorno del niño,
+ya que como se puede observar en la Figura \ref{fig:drink-question}, el jugador puede ver al frente un lago donde puede tomar agua el oso de anteojos, por lo que debe deducir
+que el líquido que debe beber es el agua.
+
+\subsection{Reconocer los Sentimientos del Oso de Anteojos:}
+
+Para esta pregunta, se le presenta al niño una pregunta con tres opciones de respuesta como se muestra en la Figura \ref{fig:feeling-question}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/feeling-question.png}
+    \caption{Pregunta sobre el sentimiento del oso de anteojos.}
+    \label{fig:feeling-question}
+\end{figure}
+
+La opción correcta es la opción C, que corresponde a la tristeza. El objetivo de esta pregunta es poner a prueba la capacidad de reconocimiento emocional del niño, ya que
+en el INCS, los profesionales que trabajan con niños con diversidad sensorial utilizan actividades que les permiten identificar y expresar sus emociones. Por lo tanto,
+esta pregunta busca evaluar si el niño puede reconocer y comprender las emociones del oso de anteojos en la historia.
+
+\section{Minijuego de Conseguir las Bromelias:}
+
+Para este minijuego, se le presenta al niño un árbol que debe escalar para conseguir las bromelias que se encuentran ahí y comérselas. Para el nivel experto, tiene que recoger tres bromelias en total,
+contando con un medidor que se va llenando a medida que va comiendo con éxito las bromelias (Ver Figura \ref{fig:tree-climb-expert}). Para el nivel novato, solo tiene que recoger y comer una bromelia (Ver Figura \ref{fig:tree-climb-rookie}).
+La diferencia entre una dificultad y la otra se ve reflejada en los marcadores que aparecen en medidor de la dificultad experta y no en la novata.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/tree-climb-expert.png}
+    \caption{Minijuego de conseguir las bromelias en dificultad experta.}
+    \label{fig:tree-climb-expert}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/tree-climb-rookie.png}
+    \caption{Minijuego de conseguir las bromelias en dificultad novata.}
+    \label{fig:tree-climb-rookie}
+\end{figure}
+
+Para la implementación de este minijuego, se agregaron pequeños troncos como los que se muestran en la Figuras \ref{fig:tree-climb-expert} y \ref{fig:tree-climb-rookie}, 
+los cuales tenían un \textit{collider} que permitía al usuario agarrarse de ellos utilizando la mecánica de agarre del \textit{XR Interaction Toolkit} conocida como \textit{Climb Interactable}.
+Cuando el usuario lograba alcanzar una bromelia, con ayuda de un \textit{script}, se reproducía un sonido de comer y se llenaba el medidor correspondiente. Una vez llenado por completo la barra,
+se emite un sonido de acierto y se continúa con la historia. Además, para evitar que el usuario
+pudiera llegar a perder alguna de las bromelias, se implementó un \textit{script} en cada una de las bromelias que hacía que estas volvieran a su posición original si el usuario las soltaba antes de comerlas.
+Por otro lado, si el usuario se quedaba agarrado de un tronco mientras se teletransportaba a la siguiente zona, también se implementó un \textit{script} que hacía que el usuario se soltara automáticamente del tronco al iniciar el teletransporte.
+
+Para ayudar a la detección de las bromelias, se agregó una opción dentro del mismo \textit{Interactable} de los objetos que hacía que estos tuvieran un color amarillo cuando el usuario pasaba la mano cerca de ellos (Ver Figura \ref{fig:bromelia-yellow}).
+La razón por la que se seleccionó el color amarillo es porque es un color que cuenta con mayor facilidad de percepción visual \cite{colorvisual}. Así, se buscaba facilitar la detección de las bromelias para los niños con diversidad sensorial que pudieran
+tener dificultades visuales.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/bromelia-yellow.png}
+    \caption{Bromelia resaltada en amarillo al acercar la mano.}
+    \label{fig:bromelia-yellow}
+\end{figure}
+
+\section{Minijuego de Beber el Agua:}
+
+Para este minijuego, se le presenta al niño un lago del cual debe beber agua utilizando un vaso que se encuentra en una mesa cercana (Ver Figura \ref{fig:drink-water}). Para el nivel experto, tiene que beber 
+un total de cinco vasos de agua completamente llenos, contando con un medidor que se va llenando a medida que va bebiendo con éxito los vasos de agua. Para el nivel novato,
+solo tiene que beber tres vasos de aguas completamente llenos. Una vez el medidor se haya llenado al completo, se emite un sonido de acierto y se continúa con la historia.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/drink-water.png}
+    \caption{Minijuego de beber el agua.}
+    \label{fig:drink-water}
+\end{figure}
+
+Para la implementación de este minijuego, se creó un \textit{script} que detectaba cuando el usuario acercaba el vaso a su boca y, si el vaso contenía agua, se reproducía un sonido de beber y se llenaba el medidor correspondiente. Cuando el usuario acercaba el vaso al lago,
+el vaso se empezaba a llenar automáticamente de agua, acompañado de un sonido que se va agudizando a medida que se llena más el vaso y un medidor cuyo objetivo es indicar qué tan lleno se encuentra el vaso. Además, para evitar que el usuario pudiera llegar a perder el vaso con agua,
+se implementó un \textit{script} en el vaso que hacía que este volviera a su posición original si el usuario lo soltaba antes de beberlo completamente.
+
+Para poder mostrar que hay agua dentro del vaso, se utilizó un \textit{shadergraph} personalizado que permitía mostrar agua dentro del vaso y, a medida que el usuario iba llenando o vaciando el vaso, se ajustaba la escala del objeto de agua dentro del vaso para simular que este se estaba llenando o vaciando (Ver Figura \ref{fig:water-shader}). Además,
+el agua se había configurado para que cambiara de forma dependiendo de la inclinación del vaso, simulando el comportamiento real del agua.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/water-shader.png}
+    \caption{Shadergraph personalizado utilizado para simular el agua dentro del vaso.}
+    \label{fig:water-shader}
+\end{figure}
+
+También, al igual que con las bromelias, se agregó una opción dentro del mismo \textit{Interactable} del vaso que hacía que este tuviera un color amarillo cuando el usuario pasaba la mano cerca de él (Ver Figura \ref{fig:water-yellow}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/vase-yellow.png}
+    \caption{Vaso resaltado en amarillo al acercar la mano.}
+    \label{fig:water-yellow}
+\end{figure}
+
+\section{Minijuego de Atrapar al Pez:}
+
+Para este minijuego, se le muestra al niño al pez que agarró las gafas del oso tratando de huir (Ver Figura \ref{fig:catch-fish}). El objetivo será el de atrapar a ese pez.
+La diferencia en dificultad para este minijuego se ve reflejada en la velocidad de movimiento del pez. En el modo experto se moverá más rápido
+que en el modo novato.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/catch-fish.png}
+    \caption{Minijuego de atrapar al pez.}
+    \label{fig:catch-fish}
+\end{figure}
+
+Para la implementación de este minijuego, se creó un \textit{GameObject} invisible (Ver Figura \ref{fig:nav-area}) que sirviera como base para el \textit{NavMesh Surface} del pez. El objetivo de este es servir como referencia
+para que el \textit{NavMesh Agent} implementado dentro del pez tenga conocimiento de hacia dónde puede dirigirse. El movimiento del pez se genera mediante un \textit{script} que, dados unos parámetros, analiza
+la superficie disponible para moverse y selecciona puntos aleatorios para poder dirigirse. Cada que se acerca a un punto de destino, este genera otro punto de destino para reducir la pérdida de velocidad.
+El movimiento aleatorio del pez se detiene en cuanto el jugador logra atraparlo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/nav-area.png}
+    \caption{Área por la que se puede mover el pez.}
+    \label{fig:nav-area}
+\end{figure}
+
+\section{Interacciones Extra:}
+
+El prototipo cuenta con otras interacciones que, si bien no cuentan como minijuegos para evaluar, aportan a la inmersión y al avance en la historia. 
+Un ejemplo sería el tocar la pata del oso (Ver Figura \ref{fig:bear-hand}). En este caso, el oso extiende su pata hacia el usuario, esperando a que
+la toque para poder convertirse en él. Si bien esto no supone un reto para el niño, es una interacción que da a entender la razón por la cuál el jugador
+se termina convirtiendo en el oso de anteojos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/bear-hand.png}
+    \caption{El oso de anteojos extendiendo su pata hacia el jugador.}
+    \label{fig:bear-hand}
+\end{figure}
