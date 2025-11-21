@@ -24,7 +24,7 @@ Durante la etapa de diseño se presentó una versión alpha del prototipo en la 
     \label{fig:terreno_v1}
 \end{figure}
 
-\subsection{Optimización de terreno para requisitos de rendimiento}
+\subsection{Optimización de terreno para requisitos de rendimiento} \label{sec:optimizacion}
 A partir de la retroalimentación, se optó por un diseño de terreno más simple que mantuviera la estética visual del ecosistema andino mientras cumplía con los requisitos de rendimiento y fluidez. La simplificación incluyó reducción de polígonos, eliminación de detalles secundarios y una paleta de colores clara con contraste visual adecuado para usuarios con diversidad sensorial, manteniendo coherencia con los requisitos no funcionales de accesibilidad (RNF-3) y rendimiento (RNF-2).
 
 \begin{figure}[H]
@@ -50,19 +50,18 @@ Para el minijuego de escalada se diseñó un árbol sencillo y de bajo conteo po
 \subsubsection{Elemento botánico: bromelia modelada con tecnología generativa}
 Para la inclusión de flora nativa del ecosistema andino, se utilizó la herramienta Meshy para generar un modelo 3D de bromelia (Bromelia sp.), planta característica del Bosque Andino. Posterior a la generación, se realizaron ajustes iterativos de geometría (reducción de polígonos), texturización y materiales para optimizar la experiencia visual sin comprometer rendimiento. La bromelia se integró como elemento narrativo y visual clave en el entorno. Ver Figuras \ref{fig:bromelia_blender} y \ref{fig:bromelia_final}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/Bromelia.png}
+    \caption{Imagen de bromelia usada como referencia para la generación del modelo en Meshy.}
+    \label{fig:bromelia_final}
+\end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{img/Bromelia_blender.png}
     \caption{Modelo de bromelia generado con Meshy y ajustado en Blender para optimización de polígonos y texturización.}
     \label{fig:bromelia_blender}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{img/Bromelia.png}
-    \caption{Bromelia final integrada en el entorno Unity con texturas y materiales optimizados.}
-    \label{fig:bromelia_final}
 \end{figure}
 
 \subsubsection{Zona acuática: lago y minijuegos de agua}

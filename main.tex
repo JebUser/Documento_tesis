@@ -18,6 +18,11 @@
 \usepackage{setspace}
 \usepackage{xcolor}
 
+% Configuración global de espaciado entre párrafos
+\setlength{\parskip}{1em}
+% Configuración de sangría al inicio de cada párrafo
+\setlength{\parindent}{1.25cm}
+
 % Entorno para acotaciones escénicas
 \newenvironment{stage}
 {\begingroup\itshape\color{gray}\begin{quote}}
@@ -37,7 +42,7 @@
 \fancyfoot{}
 \renewcommand{\chaptermark}[1]{\markboth{Pontificia Universidad Javeriana Cali}{#1}}
 \fancyhead[L]{\leftmark}
-\fancyhead[R]{\rightmark}
+\fancyhead[R]{Capítulo\ \thechapter}
 \fancyfoot[C]{\thepage}
 
 % Configuración del bibliography
@@ -92,22 +97,14 @@
 
 \input{texts/cap_3_2.tex}
 
-\ldots
-
 \input{texts/cap_4.tex}
 
-\ldots
-
-\chapter{Validación y Resultados}
 \input{texts/cap_6.tex}
 
-\chapter{Conclusiones}
-\ldots
+\input{texts/cap_7.tex}
 
-\chapter{Trabajo Futuro}
-\ldots
+\input{texts/cap_8.tex}
 
-\chapter*{Bibliografía}
 \bibliography{biblio}
 
 \end{document}

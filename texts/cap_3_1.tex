@@ -22,7 +22,7 @@ A partir del análisis de usuarios, contexto y objetivos pedagógicos, se consol
   \item RNF-06: Arquitectura modular para facilitar mantenimiento y evolución.
 \end{itemize}
 
-\subsection{Selección del entorno de desarrollo}
+\subsection{Selección del entorno de desarrollo} \label{sec:seleccion-desarrollo}
 
 La elección del entorno de desarrollo es crucial para garantizar la viabilidad técnica y la accesibilidad del prototipo. 
 Se evaluaron diversas opciones considerando su madurez, facilidad de uso, mantenimiento, portabilidad y capacidad para 
@@ -87,7 +87,7 @@ La instalación directa en Quest 2/3 habilita pruebas de campo y observación no
 La separación de lógica de juego, controladores de accesibilidad (contraste, subtítulos, audio descriptivo), y datos de actividades permite integrar nuevas escenas/retos sin afectar el núcleo, conservando la trazabilidad con requisitos y criterios de aceptación.
 
 \paragraph{Instrumentación ligera:}
-Los registros de eventos y métricas de rendimiento se mantienen desacoplados de la lógica de escena, facilitando análisis posterior y resguardo de privacidad/consentimiento según lineamientos éticos reportados.
+Los registros de eventos y métricas de rendimiento se mantienen desacoplados de la lógica de escena, facilitando análisis posterior y resguardo de privacidad / consentimiento según lineamientos éticos reportados.
 
 \subsubsection{Portabilidad dentro de Meta Quest}
 
@@ -97,7 +97,7 @@ Al basarse en OpenXR, XR Interaction Toolkit y paquetes oficiales, la dependenci
 
 Este conjunto de decisiones equilibra fiabilidad y velocidad de iteración con requisitos de accesibilidad, mantenimiento y validación en campo, conservando la posibilidad de ampliar la cobertura a más dispositivos dentro del ecosistema Meta sin comprometer la experiencia educativa ni la calidad técnica del prototipo.
 
-\section{Diseño}
+\section{Diseño} \label{sec:diseno}
 
 El siguiente apartado detalla las decisiones de diseño tomadas para cumplir con los requisitos funcionales y no funcionales establecidos en la fase anterior, enfocándose en aspectos clave como la narrativa, mecánicas de juego, accesibilidad y mitigación de riesgos.
 
@@ -113,9 +113,9 @@ y a su vez se reforzaran los objetivos pedagógicos planteados. Cada minijuego s
   \item \textbf{Atrapar al pez:} El niño deberá ayudar al oso a atrapar un pez en un lago, el cual se llevó las gafas del oso. Para esto, el niño debe usar sus manos para tratar de atrapar al pez mientras este trata de huir de él. Con esto se busca trabajar la motricidad fina, la coordinación ojo-mano y enfatizar los valores de justicia y respeto.
 \end{enumerate}
 
-Los detalles sobre la implementación de cada uno de estos minijuegos se encuentran en la sección \ref{} correspondiente a la implementación del prototipo.
+Los detalles sobre la implementación de cada uno de estos minijuegos se encuentran en la sección \ref{sec:implementacion} correspondiente a la implementación del prototipo.
 
-\subsection{Narrativa}
+\subsection{Narrativa} \label{sec:narrativa}
 La narrativa del prototipo sigue el relato del ''Oso que Perdió sus Anteojos'', una historia diseñada por los profesionales del INCS en colaboración con el proyecto Colombia-Quebec.
 La historia trata sobre un oso de anteojos que buscaba un lago para poder tomar agua, pero pierde sus gafas cuando se agacha a beber, a lo que un pez llega y se lleva las gafas del oso.
 El oso se pone triste, a lo que el pez se siente culpable y decide devolverle las gafas al oso (Ver Figura \ref{fig:cuento-instituto}).

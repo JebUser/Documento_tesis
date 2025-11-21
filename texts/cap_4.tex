@@ -1,4 +1,4 @@
-\chapter{Implementación}
+\chapter{Implementación} \label{sec:implementacion}
 
 Para el desarrollo del prototipo, se utilizó el motor de desarrollo Unity 3D. Esto se debe a que el motor cuenta con gráficos optimizados, 
 herramientas de creación de perfiles y kit de herramientas \textit{XR Interaction} que ayudan a agilizar el desarrollo y a reducir los requisitos de 
@@ -60,7 +60,7 @@ una vez el usuario presionara el botón con la dificultad deseada.
 
 Por último, para la opción de salir de la aplicación, se utilizó el método \textit{Application.Quit()} de Unity, el cual cierra la aplicación cuando es llamado.
 
-\section{Transformación en el Oso de Anteojos:}
+\section{Transformación en el Oso de Anteojos:} \label{sec:transfomacion-oso}
 
 Una de las mecánicas principales del prototipo es la transformación del usuario en un oso de anteojos. Para lograr esto, se hizo uso del modelo 3D del oso de anteojos con el esqueleto asignado explicado en \ref{bear-rig} y, 
 con ayuda del paquete de \textit{Animation Rigging} de Unity, se le aplicaron \textit{Inverse Kinematics (IK)} a las extremidades del esqueleto del oso (Ver Figura \ref{fig:bear-ik}), con el objetivo de que las manos y la cabeza siguieran los movimientos de los hápticos y la cámara del usuario.
@@ -209,7 +209,7 @@ se genera menos movimiento y, por tanto, menos malestar. La selección de la zon
     \label{fig:tp-points}
 \end{figure}
 
-\section{Minijuegos de Preguntas:}
+\section{Minijuegos de Preguntas:} \label{sec:minijuegos-preguntas}
 
 Para la implementación de los minijuegos de preguntas, se creó un \textit{Canvas} de Unity adaptado para RV y optimizado gracias al \textit{OVR Overlay Canvas}, el cual mostraba las preguntas y las opciones de respuesta en un formato interactivo. 
 Cada opción de respuesta era un \textit{button} que podía ser seleccionado mediante la interacción con los hápticos del usuario.
@@ -274,7 +274,7 @@ La opción correcta es la opción C, que corresponde a la tristeza. El objetivo 
 en el INCS, los profesionales que trabajan con niños con diversidad sensorial utilizan actividades que les permiten identificar y expresar sus emociones. Por lo tanto,
 esta pregunta busca evaluar si el niño puede reconocer y comprender las emociones del oso de anteojos en la historia.
 
-\section{Minijuego de Conseguir las Bromelias:}
+\section{Minijuego de Conseguir las Bromelias:} \label{sec:minijuego-bromelia}
 
 Para este minijuego, se le presenta al niño un árbol que debe escalar para conseguir las bromelias que se encuentran ahí y comérselas. Para el nivel experto, tiene que recoger tres bromelias en total,
 contando con un medidor que se va llenando a medida que va comiendo con éxito las bromelias (Ver Figura \ref{fig:tree-climb-expert}). Para el nivel novato, solo tiene que recoger y comer una bromelia (Ver Figura \ref{fig:tree-climb-rookie}).
@@ -309,7 +309,7 @@ tener dificultades visuales.
     \label{fig:bromelia-yellow}
 \end{figure}
 
-\section{Minijuego de Beber el Agua:}
+\section{Minijuego de Beber el Agua:} \label{sec:minijuego-agua}
 
 Para este minijuego, se le presenta al niño un lago del cual debe beber agua utilizando un vaso que se encuentra en una mesa cercana (Ver Figura \ref{fig:drink-water}). Para el nivel experto, tiene que beber 
 un total de cinco vasos de agua completamente llenos, contando con un medidor que se va llenando a medida que va bebiendo con éxito los vasos de agua. Para el nivel novato,
@@ -344,7 +344,7 @@ También, al igual que con las bromelias, se agregó una opción dentro del mism
     \label{fig:water-yellow}
 \end{figure}
 
-\section{Minijuego de Atrapar al Pez:}
+\section{Minijuego de Atrapar al Pez:} \label{sec:minijuego-pez}
 
 Para este minijuego, se le muestra al niño al pez que agarró las gafas del oso tratando de huir (Ver Figura \ref{fig:catch-fish}). El objetivo será el de atrapar a ese pez.
 La diferencia en dificultad para este minijuego se ve reflejada en la velocidad de movimiento del pez. En el modo experto se moverá más rápido
