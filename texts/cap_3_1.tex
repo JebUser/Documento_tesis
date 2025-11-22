@@ -14,12 +14,12 @@ A partir del análisis de usuarios, contexto y objetivos pedagógicos, se consol
 
 \subsection{Requisitos No Funcionales (RNF)}
 \begin{itemize}
-  \item RNF-01: Las texturas y colores deben ofrecer contrastes aptos para usuarios con dificultades visuales.
-  \item RNF-02: El sistema debe ejecutarse a \(\geq 30\) FPS en el dispositivo objetivo.
-  \item RNF-03 Deben usarse indicadores y guías claras y visibles en objetivos y zonas.
-  \item RNF-04: Debe haber colisiones invisibles que impidan avanzar a zonas no permitidas.
-  \item RNF-05: Compatibilidad con gafas Meta Quest 3.
-  \item RNF-06: Arquitectura modular para facilitar mantenimiento y evolución.
+  \item RNF-01 (Accesibilidad): El sistema debe garantizar la accesibilidad visual mediante el uso de contrastes adecuados en texturas y colores, facilitando la percepción para usuarios con diversidad sensorial visual.
+  \item RNF-02 (Eficiencia de Desempeño): El sistema debe operar con una tasa de refresco mínima de 30 cuadros por segundo (FPS) en el dispositivo objetivo para asegurar la fluidez y mitigar la cinetosis.
+  \item RNF-03 (Usabilidad): El sistema debe proveer mecanismos de orientación claros (indicadores visuales y auditivos) que permitan al usuario identificar objetivos y zonas de interacción de manera intuitiva.
+  \item RNF-04 (Fiabilidad): El sistema debe implementar límites físicos virtuales (colisiones invisibles) que restrinjan la navegación del usuario al área de juego designada, previniendo errores de ejecución o desorientación.
+  \item RNF-05 (Portabilidad): El sistema debe ser compatible para su ejecución en modo autónomo (standalone) en el dispositivo Meta Quest 3.
+  \item RNF-06 (Mantenibilidad): El sistema debe estar diseñado con una arquitectura modular que permita la modificación y extensión de sus componentes sin afectar la estabilidad del conjunto.
 \end{itemize}
 
 \subsection{Selección del entorno de desarrollo} \label{sec:seleccion-desarrollo}
@@ -197,7 +197,7 @@ Si se selecciona mal, la opción se oscurece y muestra una ``X'' roja, deshabili
 
 \dialogue{Narrador}{Nooo, el oso no puede tomar eso.}
 \dialogue{Narrador}{Mmm, creo que no es correcto.}
-\dialogue{Narrador}{Noo, no es correcto, ¡inténtalo nuevamente!}
+\dialogue{Narrator}{Noo, no es correcto, ¡inténtalo nuevamente!}
 
 \begin{stage}
 Si se selecciona bien, se reproduce un sonido de acierto acompañado de un chulo verde al cuadro de selección, y se teletransporta la zona cerca al lago.

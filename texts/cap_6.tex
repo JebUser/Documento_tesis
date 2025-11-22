@@ -13,7 +13,7 @@ Al involucrar sujetos humanos, la aprobación de todos los procedimientos y prot
 \subsection{Procedimiento}
 Se visitó el INCS para la ejecución de las pruebas en campo, utilizando gafas Meta Quest 2 como dispositivo de ejecución del prototipo en su modalidad autónoma. Se realizó la instalación de la aplicación en las gafas y, posteriormente, se condujeron pruebas observacionales en las que únicamente el niño veía el juego, mientras el equipo evaluaba el avance por medio de los audios y señales emitidas por el visor, sin proyección externa ni ayuda visual para los observadores. 
 
-Participaron dos niñas: una de 8 años con discapacidad y otra de 9 años con condición de poco desarrollo de lectura y audiovisual. Ambas realizaron la experiencia de principio a fin, cada una probando el juego una sola vez. Además, dos profesionales del INCS participaron en la validación, probando el prototipo y brindando retroalimentación experta. No se contó con disponibilidad de más niños dada la dificultad de la realización de las pruebas en el contexto institucional.
+Participaron dos niñas: una de 8 años sin discapacidad y otra de 9 años con condición de poco desarrollo de lectura y audiovisual. Ambas realizaron la experiencia de principio a fin, cada una probando el juego una sola vez. Además, dos profesionales del INCS participaron en la validación, probando el prototipo y brindando retroalimentación experta. No se contó con disponibilidad de más niños dada la dificultad de la realización de las pruebas en el contexto institucional.
 
 Este enfoque permitió analizar si el niño completaba el juego guiándose por las instrucciones auditivas y la narrativa, y observar patrones de interacción y comprensión sin influencia del observador.
 
@@ -23,20 +23,21 @@ Se valida el cumplimiento de los requisitos funcionales (RF) y no funcionales (R
 \subsection{Requisitos Funcionales}
 \begin{table}[H]
 \centering
+\small
 \caption{Validación de Requisitos Funcionales}
-\begin{tabular}{|l|p{4cm}|p{7cm}|}
+\begin{tabular}{|l|p{3cm}|p{5.2cm}|p{5.2cm}|}
 \hline
-\textbf{RF} & \textbf{Nombre} & \textbf{Validación (Observación/Usuario/Profesional)} \\
+\textbf{RF} & \textbf{Nombre} & \textbf{Criterio de éxito} & \textbf{Validación (Observación/ Usuario/ Profesional)} \\
 \hline
-RF-01 & Menú de inicio en VR & Se observa si el usuario comprende y navega el menú inicial sin ayuda. Validación con usuario y profesional. \\
+RF-01 & Menú de inicio en VR & El usuario logra interactuar con los botones del menú para iniciar la experiencia o configurar opciones. & Se observa si el usuario comprende y navega el menú inicial sin ayuda. Validación con usuario y profesional. \\
 \hline
-RF-02 & Selector de dificultad & Se observa si el usuario puede elegir el nivel de dificultad. Validación con usuario y profesional. \\
+RF-02 & Selector de dificultad & El sistema carga la escena correspondiente al nivel de dificultad seleccionado por el usuario. & Se observa si el usuario puede elegir el nivel de dificultad. Validación con usuario y profesional. \\
 \hline
-RF-03 & Narrativa con audio y subtítulos & Se verifica si el usuario comprende la historia a través de audio y subtítulos. Validación con usuario y profesional. \\
+RF-03 & Narrativa con audio y subtítulos & El audio se reproduce sincronizado con los subtítulos y el usuario mantiene la atención en el relato. & Se verifica si el usuario comprende la historia a través de audio y subtítulos. Validación con usuario y profesional. \\
 \hline
-RF-04 & Preguntas contextuales previas a minijuegos & Se observa si el usuario responde correctamente a las preguntas antes de los minijuegos. Validación con usuario y profesional. \\
+RF-04 & Preguntas contextuales previas a minijuegos & El sistema presenta la pregunta y permite al usuario seleccionar una respuesta, validando si es correcta o incorrecta. & Se observa si el usuario responde correctamente a las preguntas antes de los minijuegos. Validación con usuario y profesional. \\
 \hline
-RF-05 & Guía audiovisual para minijuegos & Se observa si el usuario comprende la guía antes de cada minijuego. Validación con usuario y profesional. \\
+RF-05 & Guía audiovisual para minijuegos & El usuario comprende la mecánica del minijuego tras observar la guía y procede a realizar la actividad. & Se observa si el usuario comprende la guía antes de cada minijuego. Validación con usuario y profesional. \\
 \hline
 \end{tabular}
 \end{table}
@@ -44,20 +45,23 @@ RF-05 & Guía audiovisual para minijuegos & Se observa si el usuario comprende l
 \subsection{Requisitos No Funcionales}
 \begin{table}[H]
 \centering
+\small
 \caption{Validación de Requisitos No Funcionales}
-\begin{tabular}{|l|p{4cm}|p{7cm}|}
+\begin{tabular}{|l|p{3cm}|p{5.2cm}|p{5.2cm}|}
 \hline
-\textbf{RNF} & \textbf{Nombre} & \textbf{Validación (Observación/Usuario/Profesional)} \\
+\textbf{RNF} & \textbf{Nombre} & \textbf{Criterio de éxito} & \textbf{Validación (Observación/ Usuario/ Profesional)} \\
 \hline
-RNF-01 & Contraste visual & Se observa si los usuarios distinguen claramente los elementos visuales. Validación con usuario y profesional. \\
+RNF-01 & Accesibilidad & Los elementos visuales presentan un contraste suficiente para ser distinguidos por usuarios con baja visión. & Se observa si los usuarios distinguen claramente los elementos visuales. Validación con usuario y profesional. \\
 \hline
-RNF-02 & Rendimiento (\(\geq 30\) FPS) & Se observa fluidez y ausencia de interrupciones durante la sesión. Validación con profesional. \\
+RNF-02 & Eficiencia de Desempeño & La aplicación mantiene una tasa de cuadros estable y ningún usuario reporta mareos o efectos asociados a baja fluidez. & Se observa fluidez y ausencia de interrupciones durante la sesión. Validación con profesional. \\
 \hline
-RNF-03 & Indicadores y guías visibles & Se observa si los usuarios identifican y siguen los indicadores y guías. Validación con usuario y profesional. \\
+RNF-03 & Usabilidad & El usuario identifica correctamente los objetivos y zonas de interacción gracias a las guías visuales y auditivas. & Se observa si los usuarios identifican y siguen los indicadores y guías. Validación con usuario y profesional. \\
 \hline
-RNF-04 & Colisiones invisibles & Se observa si el usuario no puede acceder a zonas no permitidas. Validación con profesional. \\
+RNF-04 & Fiabilidad & El usuario no logra atravesar los límites del área de juego ni acceder a zonas no permitidas. & Se observa si el usuario no puede acceder a zonas no permitidas. Validación con profesional. \\
 \hline
-RNF-05 & Compatibilidad Meta Quest 3 & Se verifica ejecución estable en el dispositivo objetivo. Validación con profesional. \\
+RNF-05 & Portabilidad & La aplicación se instala y ejecuta correctamente en modo autónomo en distintos dispositivos de las serie Meta Quest sin errores de compatibilidad. & Se verifica ejecución estable en el dispositivo objetivo. Validación con profesional. \\
+\hline
+RNF-06 & Mantenibilidad & La estructura del proyecto permite identificar y modificar componentes específicos (escenas, prefabs) sin afectar el funcionamiento global. & Revisión técnica de la arquitectura del proyecto en Unity. Validación con equipo de desarrollo, director de tesis y los profesionales del INCS. \\
 \hline
 \end{tabular}
 \end{table}
@@ -149,8 +153,8 @@ A continuación se presentan los resultados de la encuesta aplicada a los niños
 A continuación se presentan los enlaces a los formularios utilizados para la recolección de datos de las encuestas aplicadas:
 
 \begin{itemize}
-    \item \textbf{Formulario para profesionales:} \url{https://docs.google.com/forms/d/e/1FAIpQLSfbVQhvDyd-tr0zeXBdOxiLSyvpOo0uXB3eAW-09ZCh5Qfq7Q/viewform?usp=sharing&ouid=107011505231446676975}
-    \item \textbf{Formulario para niñas y niños:} \url{https://docs.google.com/forms/d/e/1FAIpQLSfetsa-WDREubyR6fi5Z5OsFUosWwQmB66EWeFfrHLB5tygmg/viewform?usp=sharing&ouid=107011505231446676975}
+    \item \textbf{Formulario para profesionales:} \href{https://docs.google.com/forms/d/e/1FAIpQLSfbVQhvDyd-tr0zeXBdOxiLSyvpOo0uXB3eAW-09ZCh5Qfq7Q/viewform?usp=sharing&ouid=107011505231446676975}{Enlace al formulario (Google Forms)}
+    \item \textbf{Formulario para niñas y niños:} \href{https://docs.google.com/forms/d/e/1FAIpQLSfetsa-WDREubyR6fi5Z5OsFUosWwQmB66EWeFfrHLB5tygmg/viewform?usp=sharing&ouid=107011505231446676975}{Enlace al formulario (Google Forms)}
 \end{itemize}
 
 \section{Análisis de resultados: Encuesta a niñas y niños}

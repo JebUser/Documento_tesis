@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.3)  21 NOV 2025 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.3)  22 NOV 2025 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -363,7 +363,7 @@ Package hyperref Info: Link coloring OFF on input line 53.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-<img/pujlogo.png, id=391, 3142.74126pt x 1589.94pt>
+<img/pujlogo.png, id=395, 3142.74126pt x 1589.94pt>
 File: img/pujlogo.png Graphic file (type png)
 <use img/pujlogo.png>
 Package pdftex.def Info: img/pujlogo.png  used on input line 70.
@@ -409,10 +409,10 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 
-LaTeX Info: Redefining \. on input line 48.
-LaTeX Info: Redefining \% on input line 48.
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 48.
+(babel)             Reported on input line 47.
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.14989pt, for example:
@@ -422,8 +422,8 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 
 [6]
 
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.14989pt, for example:
@@ -433,8 +433,8 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 
 [7]
 
-LaTeX Info: Redefining \. on input line 121.
-LaTeX Info: Redefining \% on input line 121.
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.14989pt, for example:
@@ -498,8 +498,8 @@ LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
 [17]
 
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
 [18]) (texts/cap_3.tex
 
 LaTeX Info: Redefining \. on input line 2.
@@ -512,53 +512,57 @@ Cap\'{\i }tulo 4.
 
 ]
 
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
 [21]
-<img/tablero-kanban.png, id=656, 903.375pt x 508.14844pt>
+<img/tablero-kanban.png, id=660, 903.375pt x 508.14844pt>
 File: img/tablero-kanban.png Graphic file (type png)
 <use img/tablero-kanban.png>
-Package pdftex.def Info: img/tablero-kanban.png  used on input line 65.
+Package pdftex.def Info: img/tablero-kanban.png  used on input line 67.
 (pdftex.def)             Requested size: 364.19667pt x 204.86078pt.
 
 
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
-[22
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
+[22]
+
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+[23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.81 
-      <./img/tablero-kanban.png>]
+l.107 
+       <./img/tablero-kanban.png>]
 
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
-[23]
-
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
+LaTeX Info: Redefining \. on input line 142.
+LaTeX Info: Redefining \% on input line 142.
 [24]) (texts/cap_3_1.tex
 
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
 [25]
 
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
 [26]
 
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
 [27]
 
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
 [28]
 
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
 [29]
-<img/cuento-instituto.png, id=727, 365.86688pt x 459.96844pt>
+<img/cuento-instituto.png, id=724, 365.86688pt x 459.96844pt>
 File: img/cuento-instituto.png Graphic file (type png)
 <use img/cuento-instituto.png>
 Package pdftex.def Info: img/cuento-instituto.png  used on input line 125.
@@ -589,7 +593,7 @@ LaTeX Info: Redefining \% on input line 218.
 LaTeX Info: Redefining \. on input line 259.
 LaTeX Info: Redefining \% on input line 259.
 [34]
-<img/mockup-menu.png, id=764, 1926.44719pt x 1083.29718pt>
+<img/mockup-menu.png, id=766, 1926.44719pt x 1083.29718pt>
 File: img/mockup-menu.png Graphic file (type png)
 <use img/mockup-menu.png>
 Package pdftex.def Info: img/mockup-menu.png  used on input line 293.
@@ -599,12 +603,12 @@ Package pdftex.def Info: img/mockup-menu.png  used on input line 293.
 LaTeX Info: Redefining \. on input line 297.
 LaTeX Info: Redefining \% on input line 297.
 [35]
-<img/mockup-options.png, id=776, 1926.44719pt x 1083.29718pt>
+<img/mockup-options.png, id=778, 1926.44719pt x 1083.29718pt>
 File: img/mockup-options.png Graphic file (type png)
 <use img/mockup-options.png>
 Package pdftex.def Info: img/mockup-options.png  used on input line 300.
 (pdftex.def)             Requested size: 364.19667pt x 204.78723pt.
-<img/mockup-difficulty.png, id=777, 1926.44719pt x 1083.29718pt>
+<img/mockup-difficulty.png, id=779, 1926.44719pt x 1083.29718pt>
 File: img/mockup-difficulty.png Graphic file (type png)
 <use img/mockup-difficulty.png>
 Package pdftex.def Info: img/mockup-difficulty.png  used on input line 307.
@@ -624,12 +628,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) h
                                                   \__shipout_drop_firstpage_...
 l.311 
        <./img/mockup-menu.png> <./img/mockup-options.png>]
-<img/mockup-questions.png, id=785, 1926.44719pt x 1082.54437pt>
+<img/mockup-questions.png, id=787, 1926.44719pt x 1082.54437pt>
 File: img/mockup-questions.png Graphic file (type png)
 <use img/mockup-questions.png>
 Package pdftex.def Info: img/mockup-questions.png  used on input line 314.
 (pdftex.def)             Requested size: 364.19667pt x 204.64491pt.
-<img/mockup-thirst.png, id=786, 1926.44719pt x 1083.29718pt>
+<img/mockup-thirst.png, id=788, 1926.44719pt x 1083.29718pt>
 File: img/mockup-thirst.png Graphic file (type png)
 <use img/mockup-thirst.png>
 Package pdftex.def Info: img/mockup-thirst.png  used on input line 321.
@@ -649,12 +653,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) h
                                                   \__shipout_drop_firstpage_...
 l.325 
        <./img/mockup-difficulty.png> <./img/mockup-questions.png>]
-<img/mockup-hunger.png, id=793, 1926.44719pt x 1083.29718pt>
+<img/mockup-hunger.png, id=795, 1926.44719pt x 1083.29718pt>
 File: img/mockup-hunger.png Graphic file (type png)
 <use img/mockup-hunger.png>
 Package pdftex.def Info: img/mockup-hunger.png  used on input line 328.
 (pdftex.def)             Requested size: 364.19667pt x 204.78723pt.
-<img/mockup-tutorial.png, id=794, 1924.94156pt x 1083.29718pt>
+<img/mockup-tutorial.png, id=796, 1924.94156pt x 1083.29718pt>
 File: img/mockup-tutorial.png Graphic file (type png)
 <use img/mockup-tutorial.png>
 Package pdftex.def Info: img/mockup-tutorial.png  used on input line 335.
@@ -674,7 +678,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) h
                                                   \__shipout_drop_firstpage_...
 l.339 
        <./img/mockup-thirst.png> <./img/mockup-hunger.png>]
-<img/flow-diagram.png, id=802, 1933.2225pt x 2307.62125pt>
+<img/flow-diagram.png, id=804, 1933.2225pt x 2307.62125pt>
 File: img/flow-diagram.png Graphic file (type png)
 <use img/flow-diagram.png>
 Package pdftex.def Info: img/flow-diagram.png  used on input line 346.
@@ -689,7 +693,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) h
                                                   \__shipout_drop_firstpage_...
 l.350 
        <./img/mockup-tutorial.png>]
-<img/use-cases-diagram.png, id=810, 1196.47pt x 924.45375pt>
+<img/use-cases-diagram.png, id=812, 1196.47pt x 924.45375pt>
 File: img/use-cases-diagram.png Graphic file (type png)
 <use img/use-cases-diagram.png>
 Package pdftex.def Info: img/use-cases-diagram.png  used on input line 357.
@@ -713,12 +717,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) 
                                                   \__shipout_drop_firstpage_...
 l.9 
      <./img/use-cases-diagram.png>]
-<img/Bosque_Andino_Iguaque.png, id=822, 1463.4675pt x 1097.60063pt>
+<img/Bosque_Andino_Iguaque.png, id=824, 1463.4675pt x 1097.60063pt>
 File: img/Bosque_Andino_Iguaque.png Graphic file (type png)
 <use img/Bosque_Andino_Iguaque.png>
 Package pdftex.def Info: img/Bosque_Andino_Iguaque.png  used on input line 12.
 (pdftex.def)             Requested size: 364.19667pt x 273.14337pt.
-<img/Terreno_unity_v1.png, id=824, 979.40906pt x 1026.83624pt>
+<img/Terreno_unity_v1.png, id=826, 979.40906pt x 1026.83624pt>
 File: img/Terreno_unity_v1.png Graphic file (type png)
 <use img/Terreno_unity_v1.png>
 Package pdftex.def Info: img/Terreno_unity_v1.png  used on input line 22.
@@ -733,7 +737,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) 
                                                   \__shipout_drop_firstpage_...
 l.26 
       <./img/Bosque_Andino_Iguaque.png>]
-<img/terrain_scene.png, id=832, 1160.83687pt x 743.02594pt>
+<img/terrain_scene.png, id=835, 1160.83687pt x 743.02594pt>
 File: img/terrain_scene.png Graphic file (type png)
 <use img/terrain_scene.png>
 Package pdftex.def Info: img/terrain_scene.png  used on input line 32.
@@ -748,7 +752,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13}) 
                                                   \__shipout_drop_firstpage_...
 l.36 
       <./img/Terreno_unity_v1.png>]
-<img/climb_zone.png, id=840, 1416.79312pt x 741.52031pt>
+<img/climb_zone.png, id=844, 1416.79312pt x 741.52031pt>
 File: img/climb_zone.png Graphic file (type png)
 <use img/climb_zone.png>
 Package pdftex.def Info: img/climb_zone.png  used on input line 45.
@@ -763,12 +767,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14}) 
                                                   \__shipout_drop_firstpage_...
 l.49 
       <./img/terrain_scene.png>]
-<img/Bromelia.png, id=851, 421.3341pt x 361.35pt>
+<img/Bromelia.png, id=854, 421.3341pt x 361.35pt>
 File: img/Bromelia.png Graphic file (type png)
 <use img/Bromelia.png>
 Package pdftex.def Info: img/Bromelia.png  used on input line 55.
 (pdftex.def)             Requested size: 273.14923pt x 234.2682pt.
-<img/Bromelia_blender.png, id=852, 590.95781pt x 523.20468pt>
+<img/Bromelia_blender.png, id=855, 590.95781pt x 523.20468pt>
 File: img/Bromelia_blender.png Graphic file (type png)
 <use img/Bromelia_blender.png>
 Package pdftex.def Info: img/Bromelia_blender.png  used on input line 62.
@@ -788,7 +792,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.16}) 
                                                   \__shipout_drop_firstpage_...
 l.66 
       <./img/climb_zone.png> <./img/Bromelia.png>]
-<img/drink_zone.png, id=863, 1423.56844pt x 730.98094pt>
+<img/drink_zone.png, id=866, 1423.56844pt x 730.98094pt>
 File: img/drink_zone.png Graphic file (type png)
 <use img/drink_zone.png>
 Package pdftex.def Info: img/drink_zone.png  used on input line 72.
@@ -808,12 +812,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.18}) 
                                                   \__shipout_drop_firstpage_...
 l.79 
       <./img/Bromelia_blender.png> <./img/drink_zone.png>]
-<img/bear.png, id=873, 599.99156pt x 441.90094pt>
+<img/bear.png, id=878, 599.99156pt x 441.90094pt>
 File: img/bear.png Graphic file (type png)
 <use img/bear.png>
 Package pdftex.def Info: img/bear.png  used on input line 82.
 (pdftex.def)             Requested size: 273.14923pt x 201.17987pt.
-<img/preview-fish.png, id=875, 1595.20969pt x 1005.00468pt>
+<img/preview-fish.png, id=880, 1595.20969pt x 1005.00468pt>
 File: img/preview-fish.png Graphic file (type png)
 <use img/preview-fish.png>
 Package pdftex.def Info: img/preview-fish.png  used on input line 94.
@@ -828,7 +832,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.19}) 
                                                   \__shipout_drop_firstpage_...
 l.98 
       <./img/bear.png>]
-<img/rig-mixamo.png, id=887, 947.03813pt x 925.95938pt>
+<img/rig-mixamo.png, id=894, 947.03813pt x 925.95938pt>
 File: img/rig-mixamo.png Graphic file (type png)
 <use img/rig-mixamo.png>
 Package pdftex.def Info: img/rig-mixamo.png  used on input line 111.
@@ -843,7 +847,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.20}) 
                                                   \__shipout_drop_firstpage_...
 l.115 
        <./img/preview-fish.png>]
-<img/rig-blender.png, id=896, 1580.90625pt x 995.21812pt>
+<img/rig-blender.png, id=903, 1580.90625pt x 995.21812pt>
 File: img/rig-blender.png Graphic file (type png)
 <use img/rig-blender.png>
 Package pdftex.def Info: img/rig-blender.png  used on input line 118.
@@ -863,12 +867,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.22}) 
                                                   \__shipout_drop_firstpage_...
 l.132 
        <./img/rig-mixamo.png> <./img/rig-blender.png>]
-<img/animation-recording.jpg, id=906, 1453.43pt x 1090.0725pt>
+<img/animation-recording.jpg, id=913, 1453.43pt x 1090.0725pt>
 File: img/animation-recording.jpg Graphic file (type jpg)
 <use img/animation-recording.jpg>
 Package pdftex.def Info: img/animation-recording.jpg  used on input line 135.
 (pdftex.def)             Requested size: 364.19667pt x 273.1495pt.
-<img/markers-distribution.png, id=907, 1085.55562pt x 765.6103pt>
+<img/markers-distribution.png, id=914, 1085.55562pt x 765.6103pt>
 File: img/markers-distribution.png Graphic file (type png)
 <use img/markers-distribution.png>
 Package pdftex.def Info: img/markers-distribution.png  used on input line 142.
@@ -883,12 +887,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.23}) 
                                                   \__shipout_drop_firstpage_...
 l.146 
        <./img/animation-recording.jpg>]
-<img/software-preview.jpg, id=916, 1453.43pt x 1090.0725pt>
+<img/software-preview.jpg, id=923, 1453.43pt x 1090.0725pt>
 File: img/software-preview.jpg Graphic file (type jpg)
 <use img/software-preview.jpg>
 Package pdftex.def Info: img/software-preview.jpg  used on input line 149.
 (pdftex.def)             Requested size: 364.19667pt x 273.1495pt.
-<img/blender-animation-editing.png, id=918, 1590.69281pt x 995.21812pt>
+<img/blender-animation-editing.png, id=925, 1590.69281pt x 995.21812pt>
 File: img/blender-animation-editing.png Graphic file (type png)
 <use img/blender-animation-editing.png>
 Package pdftex.def Info: img/blender-animation-editing.png  used on input line 157.
@@ -908,7 +912,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.25}) 
                                                   \__shipout_drop_firstpage_...
 l.161 
        <./img/markers-distribution.png> <./img/software-preview.jpg>]
-<img/animation-transfer.png, id=926, 463.7325pt x 524.71031pt>
+<img/animation-transfer.png, id=933, 463.7325pt x 524.71031pt>
 File: img/animation-transfer.png Graphic file (type png)
 <use img/animation-transfer.png>
 Package pdftex.def Info: img/animation-transfer.png  used on input line 167.
@@ -923,7 +927,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.26}) 
                                                   \__shipout_drop_firstpage_...
 l.171 
        <./img/blender-animation-editing.png>]
-<img/fish-animation.png, id=934, 1210.5225pt x 951.555pt>
+<img/fish-animation.png, id=941, 1210.5225pt x 951.555pt>
 File: img/fish-animation.png Graphic file (type png)
 <use img/fish-animation.png>
 Package pdftex.def Info: img/fish-animation.png  used on input line 179.
@@ -948,7 +952,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.28}) 
 l.1 \chapter
             {Implementación} \label{sec:implementacion} <./img/fish-animation.png>]
 Cap\'{\i }tulo 5.
-<img/mainmenu-ingame.png, id=950, 706.13812pt x 740.7675pt>
+<img/mainmenu-ingame.png, id=957, 706.13812pt x 740.7675pt>
 File: img/mainmenu-ingame.png Graphic file (type png)
 <use img/mainmenu-ingame.png>
 Package pdftex.def Info: img/mainmenu-ingame.png  used on input line 24.
@@ -958,7 +962,7 @@ Package pdftex.def Info: img/mainmenu-ingame.png  used on input line 24.
 [55
 
 ]
-<img/optionsmenu-ingame.png, id=957, 706.13812pt x 742.27313pt>
+<img/optionsmenu-ingame.png, id=964, 706.13812pt x 742.27313pt>
 File: img/optionsmenu-ingame.png Graphic file (type png)
 <use img/optionsmenu-ingame.png>
 Package pdftex.def Info: img/optionsmenu-ingame.png  used on input line 36.
@@ -973,7 +977,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) h
                                                   \__shipout_drop_firstpage_...
 l.40 
       <./img/mainmenu-ingame.png>]
-<img/handlers-preserved.png, id=966, 288.3272pt x 134.00063pt>
+<img/handlers-preserved.png, id=973, 288.3272pt x 134.00063pt>
 File: img/handlers-preserved.png Graphic file (type png)
 <use img/handlers-preserved.png>
 Package pdftex.def Info: img/handlers-preserved.png  used on input line 46.
@@ -988,7 +992,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) h
                                                   \__shipout_drop_firstpage_...
 l.50 
       <./img/optionsmenu-ingame.png>]
-<img/difficultymenu-ingame.png, id=974, 703.87968pt x 743.02594pt>
+<img/difficultymenu-ingame.png, id=981, 703.87968pt x 743.02594pt>
 File: img/difficultymenu-ingame.png Graphic file (type png)
 <use img/difficultymenu-ingame.png>
 Package pdftex.def Info: img/difficultymenu-ingame.png  used on input line 56.
@@ -1007,7 +1011,7 @@ Overfull \hbox (3.1973pt too wide) in paragraph at lines 61--62
 []\OT1/ptm/m/n/12 Por []ulti-mo, pa-ra la op-ci[]on de sa-lir de la apli-ca-ci[]on, se uti-liz[]o el m[]eto-do \OT1/ptm/m/it/12 Ap-pli-ca-tion.Quit()
  []
 
-<img/bear-ik.png, id=983, 426.84468pt x 446.41782pt>
+<img/bear-ik.png, id=990, 426.84468pt x 446.41782pt>
 File: img/bear-ik.png Graphic file (type png)
 <use img/bear-ik.png>
 Package pdftex.def Info: img/bear-ik.png  used on input line 70.
@@ -1022,7 +1026,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) h
                                                   \__shipout_drop_firstpage_...
 l.74 
       <./img/difficultymenu-ingame.png>]
-<img/bear-offset.png, id=991, 416.30531pt x 486.31688pt>
+<img/bear-offset.png, id=998, 416.30531pt x 486.31688pt>
 File: img/bear-offset.png Graphic file (type png)
 <use img/bear-offset.png>
 Package pdftex.def Info: img/bear-offset.png  used on input line 81.
@@ -1050,12 +1054,12 @@ l.102 \begin{equation}
 LaTeX Info: Redefining \. on input line 147.
 LaTeX Info: Redefining \% on input line 147.
 [62]
-<img/hand-correction-model.png, id=1021, 572.1375pt x 338.76563pt>
+<img/hand-correction-model.png, id=1030, 572.1375pt x 338.76563pt>
 File: img/hand-correction-model.png Graphic file (type png)
 <use img/hand-correction-model.png>
 Package pdftex.def Info: img/hand-correction-model.png  used on input line 175.
 (pdftex.def)             Requested size: 182.09486pt x 107.81792pt.
-<img/pov-player.png, id=1023, 706.13812pt x 644.4075pt>
+<img/pov-player.png, id=1032, 706.13812pt x 644.4075pt>
 File: img/pov-player.png Graphic file (type png)
 <use img/pov-player.png>
 Package pdftex.def Info: img/pov-player.png  used on input line 185.
@@ -1079,17 +1083,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8}) h
                                                   \__shipout_drop_firstpage_...
 l.204 
        <./img/pov-player.png>]
-<img/tp-points.png, id=1039, 216.05719pt x 104.64093pt>
+<img/tp-points.png, id=1048, 216.05719pt x 104.64093pt>
 File: img/tp-points.png Graphic file (type png)
 <use img/tp-points.png>
 Package pdftex.def Info: img/tp-points.png  used on input line 207.
 (pdftex.def)             Requested size: 182.09486pt x 88.19475pt.
-<img/incorrect-example.png, id=1042, 703.12688pt x 740.7675pt>
+<img/incorrect-example.png, id=1051, 703.12688pt x 740.7675pt>
 File: img/incorrect-example.png Graphic file (type png)
 <use img/incorrect-example.png>
 Package pdftex.def Info: img/incorrect-example.png  used on input line 222.
 (pdftex.def)             Requested size: 273.14923pt x 287.76784pt.
-<img/correct-example.png, id=1043, 708.39656pt x 743.02594pt>
+<img/correct-example.png, id=1052, 708.39656pt x 743.02594pt>
 File: img/correct-example.png Graphic file (type png)
 <use img/correct-example.png>
 Package pdftex.def Info: img/correct-example.png  used on input line 228.
@@ -1104,7 +1108,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9}) h
                                                   \__shipout_drop_firstpage_...
 l.231 \end{figure}
                    <./img/tp-points.png>]
-<img/food-question.png, id=1054, 705.38531pt x 743.02594pt>
+<img/food-question.png, id=1063, 705.38531pt x 743.02594pt>
 File: img/food-question.png Graphic file (type png)
 <use img/food-question.png>
 Package pdftex.def Info: img/food-question.png  used on input line 238.
@@ -1124,7 +1128,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.11}) 
                                                   \__shipout_drop_firstpage_...
 l.241 \end{figure}
                    <./img/incorrect-example.png> <./img/correct-example.png>]
-<img/drink-question.png, id=1064, 979.40906pt x 1029.09468pt>
+<img/drink-question.png, id=1073, 979.40906pt x 1029.09468pt>
 File: img/drink-question.png Graphic file (type png)
 <use img/drink-question.png>
 Package pdftex.def Info: img/drink-question.png  used on input line 254.
@@ -1139,7 +1143,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.12}) 
                                                   \__shipout_drop_firstpage_...
 l.258 
        <./img/food-question.png>]
-<img/feeling-question.png, id=1075, 980.91469pt x 1025.33063pt>
+<img/feeling-question.png, id=1084, 980.91469pt x 1025.33063pt>
 File: img/feeling-question.png Graphic file (type png)
 <use img/feeling-question.png>
 Package pdftex.def Info: img/feeling-question.png  used on input line 268.
@@ -1154,12 +1158,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.13}) 
                                                   \__shipout_drop_firstpage_...
 l.272 
        <./img/drink-question.png>]
-<img/tree-climb-expert.png, id=1084, 706.13812pt x 740.0147pt>
+<img/tree-climb-expert.png, id=1093, 706.13812pt x 740.0147pt>
 File: img/tree-climb-expert.png Graphic file (type png)
 <use img/tree-climb-expert.png>
 Package pdftex.def Info: img/tree-climb-expert.png  used on input line 284.
 (pdftex.def)             Requested size: 273.14923pt x 286.25589pt.
-<img/tree-climb-rookie.png, id=1085, 980.16188pt x 1023.825pt>
+<img/tree-climb-rookie.png, id=1094, 980.16188pt x 1023.825pt>
 File: img/tree-climb-rookie.png Graphic file (type png)
 <use img/tree-climb-rookie.png>
 Package pdftex.def Info: img/tree-climb-rookie.png  used on input line 290.
@@ -1188,12 +1192,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.16}) 
                                                   \__shipout_drop_firstpage_...
 l.301 
        <./img/tree-climb-expert.png> <./img/tree-climb-rookie.png>]
-<img/bromelia-yellow.png, id=1103, 375.65344pt x 251.43938pt>
+<img/bromelia-yellow.png, id=1112, 375.65344pt x 251.43938pt>
 File: img/bromelia-yellow.png Graphic file (type png)
 <use img/bromelia-yellow.png>
 Package pdftex.def Info: img/bromelia-yellow.png  used on input line 307.
 (pdftex.def)             Requested size: 182.09486pt x 121.88655pt.
-<img/drink-water.png, id=1105, 980.16188pt x 1025.33063pt>
+<img/drink-water.png, id=1114, 980.16188pt x 1025.33063pt>
 File: img/drink-water.png Graphic file (type png)
 <use img/drink-water.png>
 Package pdftex.def Info: img/drink-water.png  used on input line 320.
@@ -1208,7 +1212,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.17}) 
                                                   \__shipout_drop_firstpage_...
 l.324 
        <./img/bromelia-yellow.png>]
-<img/water-shader.png, id=1115, 797.98125pt x 535.2497pt>
+<img/water-shader.png, id=1124, 797.98125pt x 535.2497pt>
 File: img/water-shader.png Graphic file (type png)
 <use img/water-shader.png>
 Package pdftex.def Info: img/water-shader.png  used on input line 334.
@@ -1223,7 +1227,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.18}) 
                                                   \__shipout_drop_firstpage_...
 l.338 
        <./img/drink-water.png>]
-<img/vase-yellow.png, id=1124, 165.61874pt x 240.9pt>
+<img/vase-yellow.png, id=1133, 165.61874pt x 240.9pt>
 File: img/vase-yellow.png Graphic file (type png)
 <use img/vase-yellow.png>
 Package pdftex.def Info: img/vase-yellow.png  used on input line 342.
@@ -1243,12 +1247,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.20}) 
                                                   \__shipout_drop_firstpage_...
 l.352 
        <./img/water-shader.png> <./img/vase-yellow.png>]
-<img/catch-fish.png, id=1134, 982.42032pt x 1024.57782pt>
+<img/catch-fish.png, id=1143, 982.42032pt x 1024.57782pt>
 File: img/catch-fish.png Graphic file (type png)
 <use img/catch-fish.png>
 Package pdftex.def Info: img/catch-fish.png  used on input line 355.
 (pdftex.def)             Requested size: 273.14923pt x 284.86307pt.
-<img/nav-area.png, id=1136, 576.65437pt x 513.41812pt>
+<img/nav-area.png, id=1145, 576.65437pt x 513.41812pt>
 File: img/nav-area.png Graphic file (type png)
 <use img/nav-area.png>
 Package pdftex.def Info: img/nav-area.png  used on input line 367.
@@ -1263,7 +1267,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.21}) 
                                                   \__shipout_drop_firstpage_...
 l.371 
        <./img/catch-fish.png>]
-<img/bear-hand.png, id=1144, 977.90344pt x 1026.08344pt>
+<img/bear-hand.png, id=1153, 977.90344pt x 1026.08344pt>
 File: img/bear-hand.png Graphic file (type png)
 <use img/bear-hand.png>
 Package pdftex.def Info: img/bear-hand.png  used on input line 381.
@@ -1283,244 +1287,235 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.23}) 
                                                   \__shipout_drop_firstpage_...
 l.1 \chapter
             {Validación y Resultados} <./img/nav-area.png> <./img/bear-hand.png>]
+
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[76]
 Cap\'{\i }tulo 6.
 
 
-[76
+[77
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-[]\OT1/ptm/b/n/12 Validaci[]on (Ob-ser-va-
+Underfull \hbox (badness 7486) in paragraph at lines 38--38
+[]\OT1/ptm/m/n/10.95 Preguntas con-tex-
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 39--39
-[]\OT1/ptm/m/n/12 Gu[]^^Pa au-dio-vi-sual pa-ra
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\OT1/ptm/m/n/10.95 Gu[]^^Pa au-dio-vi-sual
+ []
+
+
+Overfull \hbox (2.0106pt too wide) in paragraph at lines 28--43
+ [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-[77]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-[]\OT1/ptm/b/n/12 Validaci[]on (Ob-ser-va-
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+[78]
+Overfull \hbox (9.91646pt too wide) in paragraph at lines 50--67
+ [][] 
  []
 
 
-Underfull \hbox (badness 6268) in paragraph at lines 54--54
-[]\OT1/ptm/m/n/12 Rendimiento ($\OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 30$
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]\OT1/ptm/m/n/12 Compatibilidad Me-ta
- []
-
-<img/prueba1.jpg, id=1161, 1690.315pt x 1267.73625pt>
-File: img/prueba1.jpg Graphic file (type jpg)
-<use img/prueba1.jpg>
-Package pdftex.def Info: img/prueba1.jpg  used on input line 70.
-(pdftex.def)             Requested size: 364.19667pt x 273.1383pt.
-
-
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
-[78
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+[79
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.72 \end{figure}
-                 
+l.68 
+     ]
+<img/prueba1.jpg, id=1181, 1690.315pt x 1267.73625pt>
+File: img/prueba1.jpg Graphic file (type jpg)
+<use img/prueba1.jpg>
+Package pdftex.def Info: img/prueba1.jpg  used on input line 74.
+(pdftex.def)             Requested size: 364.19667pt x 273.1383pt.
+
+
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+[80
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.72 \end{figure}
-                 ]
-<img/prueba2.jpg, id=1169, 1720.4275pt x 1289.81876pt>
+l.77 
+     ]
+<img/prueba2.jpg, id=1187, 1720.4275pt x 1289.81876pt>
 File: img/prueba2.jpg Graphic file (type jpg)
 <use img/prueba2.jpg>
-Package pdftex.def Info: img/prueba2.jpg  used on input line 76.
+Package pdftex.def Info: img/prueba2.jpg  used on input line 80.
 (pdftex.def)             Requested size: 364.19667pt x 273.03484pt.
+<img/prueba3.jpg, id=1188, 1726.45pt x 1294.8375pt>
+File: img/prueba3.jpg Graphic file (type jpg)
+<use img/prueba3.jpg>
+Package pdftex.def Info: img/prueba3.jpg  used on input line 86.
+(pdftex.def)             Requested size: 364.19667pt x 273.1291pt.
 
 
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
-[79
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+[81
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.79 
-      <./img/prueba1.jpg>]
-<img/prueba3.jpg, id=1175, 1726.45pt x 1294.8375pt>
-File: img/prueba3.jpg Graphic file (type jpg)
-<use img/prueba3.jpg>
-Package pdftex.def Info: img/prueba3.jpg  used on input line 82.
-(pdftex.def)             Requested size: 364.19667pt x 273.1291pt.
-<img/R1.png, id=1176, 555.57562pt x 169.38281pt>
-File: img/R1.png Graphic file (type png)
-<use img/R1.png>
-Package pdftex.def Info: img/R1.png  used on input line 93.
-(pdftex.def)             Requested size: 318.66948pt x 97.15657pt.
-
-
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
-[80
+l.89 
+     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.95 \end{figure}
-                 
+l.89 
+      <./img/prueba1.jpg> <./img/prueba2.jpg>]
+<img/R1.png, id=1195, 555.57562pt x 169.38281pt>
+File: img/R1.png Graphic file (type png)
+<use img/R1.png>
+Package pdftex.def Info: img/R1.png  used on input line 97.
+(pdftex.def)             Requested size: 318.66948pt x 97.15657pt.
+<img/R2.png, id=1196, 552.56438pt x 210.7875pt>
+File: img/R2.png Graphic file (type png)
+<use img/R2.png>
+Package pdftex.def Info: img/R2.png  used on input line 103.
+(pdftex.def)             Requested size: 318.66948pt x 121.5621pt.
+
+
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+[82
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.95 \end{figure}
-                  <./img/prueba2.jpg> <./img/prueba3.jpg>]
-<img/R2.png, id=1183, 552.56438pt x 210.7875pt>
-File: img/R2.png Graphic file (type png)
-<use img/R2.png>
-Package pdftex.def Info: img/R2.png  used on input line 99.
-(pdftex.def)             Requested size: 318.66948pt x 121.5621pt.
-<img/R3.png, id=1184, 553.31718pt x 155.07938pt>
-File: img/R3.png Graphic file (type png)
-<use img/R3.png>
-Package pdftex.def Info: img/R3.png  used on input line 105.
-(pdftex.def)             Requested size: 318.66948pt x 89.31429pt.
-<img/R4.png, id=1185, 560.0925pt x 148.30406pt>
-File: img/R4.png Graphic file (type png)
-<use img/R4.png>
-Package pdftex.def Info: img/R4.png  used on input line 111.
-(pdftex.def)             Requested size: 318.66948pt x 84.38255pt.
-<img/R5.png, id=1186, 555.57562pt x 141.52875pt>
-File: img/R5.png Graphic file (type png)
-<use img/R5.png>
-Package pdftex.def Info: img/R5.png  used on input line 117.
-(pdftex.def)             Requested size: 318.66948pt x 81.1797pt.
-
-
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
-[81
+l.106 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 
-      
+l.106 
+       <./img/prueba3.jpg> <./img/R1.png>]
+<img/R3.png, id=1204, 553.31718pt x 155.07938pt>
+File: img/R3.png Graphic file (type png)
+<use img/R3.png>
+Package pdftex.def Info: img/R3.png  used on input line 109.
+(pdftex.def)             Requested size: 318.66948pt x 89.31429pt.
+<img/R4.png, id=1205, 560.0925pt x 148.30406pt>
+File: img/R4.png Graphic file (type png)
+<use img/R4.png>
+Package pdftex.def Info: img/R4.png  used on input line 115.
+(pdftex.def)             Requested size: 318.66948pt x 84.38255pt.
+<img/R5.png, id=1206, 555.57562pt x 141.52875pt>
+File: img/R5.png Graphic file (type png)
+<use img/R5.png>
+Package pdftex.def Info: img/R5.png  used on input line 121.
+(pdftex.def)             Requested size: 318.66948pt x 81.1797pt.
+<img/R6.png, id=1207, 537.50812pt x 321.45094pt>
+File: img/R6.png Graphic file (type png)
+<use img/R6.png>
+Package pdftex.def Info: img/R6.png  used on input line 127.
+(pdftex.def)             Requested size: 318.66948pt x 190.57654pt.
+
+
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+[83
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 
+l.130 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 
+l.130 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 
-       <./img/R1.png> <./img/R2.png> <./img/R3.png> <./img/R4.png>]
-<img/R6.png, id=1199, 537.50812pt x 321.45094pt>
-File: img/R6.png Graphic file (type png)
-<use img/R6.png>
-Package pdftex.def Info: img/R6.png  used on input line 123.
-(pdftex.def)             Requested size: 318.66948pt x 190.57654pt.
-<img/u1.png, id=1200, 428.35031pt x 227.34938pt>
-File: img/u1.png Graphic file (type png)
-<use img/u1.png>
-Package pdftex.def Info: img/u1.png  used on input line 132.
-(pdftex.def)             Requested size: 273.14923pt x 144.9758pt.
-<img/u2.png, id=1201, 414.79968pt x 217.5628pt>
-File: img/u2.png Graphic file (type png)
-<use img/u2.png>
-Package pdftex.def Info: img/u2.png  used on input line 138.
-(pdftex.def)             Requested size: 273.14923pt x 143.26987pt.
-
-
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
-[82
+l.130 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.141 
-      
+l.130 
+       <./img/R2.png> <./img/R3.png> <./img/R4.png> <./img/R5.png>]
+<img/u1.png, id=1220, 428.35031pt x 227.34938pt>
+File: img/u1.png Graphic file (type png)
+<use img/u1.png>
+Package pdftex.def Info: img/u1.png  used on input line 136.
+(pdftex.def)             Requested size: 273.14923pt x 144.9758pt.
+<img/u2.png, id=1221, 414.79968pt x 217.5628pt>
+File: img/u2.png Graphic file (type png)
+<use img/u2.png>
+Package pdftex.def Info: img/u2.png  used on input line 142.
+(pdftex.def)             Requested size: 273.14923pt x 143.26987pt.
+
+
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
+[84
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.141 
+l.145 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.141 
-       <./img/R5.png> <./img/R6.png> <./img/u1.png>]
-<img/u3.png, id=1212, 409.53pt x 217.5628pt>
+l.145 
+       <./img/R6.png> <./img/u1.png>]
+<img/u3.png, id=1231, 409.53pt x 217.5628pt>
 File: img/u3.png Graphic file (type png)
 <use img/u3.png>
-Package pdftex.def Info: img/u3.png  used on input line 144.
+Package pdftex.def Info: img/u3.png  used on input line 148.
 (pdftex.def)             Requested size: 273.14923pt x 145.11897pt.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 152.
- (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (391.30882pt too wide) in paragraph at lines 152--153
-[]\OT1/ptm/b/n/12 Formulario pa-ra pro-fe-sio-na-les: []$\OT1/pcr/m/n/12 https : / / docs . google . com / forms / d / e / 1FAIpQLSfbVQhvDyd-[]tr0zeXBdOxiLSyvpOo0uXB3eAW-[]09ZCh5Qfq7Q /
- []
-
-
-Overfull \hbox (388.94891pt too wide) in paragraph at lines 153--154
-[]\OT1/ptm/b/n/12 Formulario pa-ra ni[]nas y ni[]nos: []$\OT1/pcr/m/n/12 https : / / docs . google . com / forms / d / e / 1FAIpQLSfetsa-[]WDREubyR6fi5Z5OsFUosWwQmB66EWeFfrHLB5tygmg /
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 160.
-(C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 164.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-LaTeX Info: Redefining \. on input line 163.
-LaTeX Info: Redefining \% on input line 163.
-[83
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+[85
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163     \item S
-                 eleccionó correctamente la primera pregunta y avanzó al s...
+l.168     \item E
+                 n el tercer minijuego, respondió correctamente a la primer...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163     \item S
-                 eleccionó correctamente la primera pregunta y avanzó al s... <./img/u2.png> <./img/u3.png>]
+l.168     \item E
+                 n el tercer minijuego, respondió correctamente a la primer... <./img/u2.png> <./img/u3.png>]
 
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
-[84]) (texts/cap_7.tex
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
+[86]) (texts/cap_7.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[85]
+[87]
 Cap\'{\i }tulo 7.
 
 
-[86
+[88
 
 ]) (texts/cap_8.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[87]
+[89]
 Cap\'{\i }tulo 8.
 
 
-[88
+[90
 
 ]) (main.bbl
 
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
-[89]
+[91]
 Underfull \hbox (badness 10000) in paragraph at lines 38--46
 []\OT1/ptm/m/n/12 ``WCS LAN-ZA SU CAM-PA[]NA `HAY VIA-JES QUE MAR-CAN VI-DAS',
  []
@@ -1547,9 +1542,19 @@ Overfull \hbox (122.07509pt too wide) in paragraph at lines 38--46
 
 
 
-[90
+[92
 
-])
+]
+Underfull \hbox (badness 1867) in paragraph at lines 129--132
+[]\OT1/ptm/m/n/12 lebedeva[]maru, ``Car-toon Bear AR ani-ma-tion mo-del,'' []$https : / / www . turbosquid . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
+[]\OT1/ptm/m/n/12 Yoshikitaima, ``Glas-ses mo-del,'' []$https : / / www . turbosquid . com / 3d-[]models /
+ []
+
+)
 
 LaTeX Info: Redefining \. on input line 110.
 LaTeX Info: Redefining \% on input line 110.
@@ -1560,7 +1565,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64989pt}.
 
-[91] (main.aux
+[93] (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -1569,20 +1574,20 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 64A65F99549F50D96E7E10A47520C97E;19263.
+(rerunfilecheck)             Checksum: F2849D973A701E257A7329D8FEC689DD;19415.
  ) 
 Here is how much of TeX's memory you used:
- 13557 strings out of 468080
- 217264 string characters out of 5424804
- 639276 words of memory out of 5000000
- 41660 multiletter control sequences out of 15000+600000
- 646619 words of font info for 79 fonts, out of 8000000 for 9000
+ 13535 strings out of 468080
+ 216959 string characters out of 5424804
+ 642292 words of memory out of 5000000
+ 41638 multiletter control sequences out of 15000+600000
+ 650863 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,91p,914b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (92 pages, 68546355 bytes).
+ 75i,13n,91p,1128b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (94 pages, 68535741 bytes).
 PDF statistics:
- 1425 PDF objects out of 1440 (max. 8388607)
- 353 named destinations out of 1000 (max. 500000)
- 1097 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1440 PDF objects out of 1440 (max. 8388607)
+ 356 named destinations out of 1000 (max. 500000)
+ 1105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
